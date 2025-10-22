@@ -29,23 +29,27 @@
       text-align: justify;
       margin-bottom: 18px;
     }
+
+    /* Кнопка "На главную" — стиль как в первой статье */
     .back {
       display: block;
-      text-align: center;
-      margin-top: 40px;
+      text-align: center; /* ставим в центр, как в первой статье */
+      margin-top: 50px;
     }
     .back a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0044cc; /* синий фон */
+      color: #fff; /* белый текст */
       text-decoration: none;
-      color: #0044cc;
-      border: 1px solid #0044cc;
-      padding: 8px 16px;
-      border-radius: 8px;
+      border-radius: 5px;
+      font-weight: bold;
       transition: all 0.3s ease;
     }
     .back a:hover {
-      background-color: #0044cc;
-      color: white;
+      background-color: #002a80; /* затемнение при наведении */
     }
+
     footer {
       text-align: center;
       font-size: 14px;
@@ -73,6 +77,7 @@
 
   <p>Таким образом, бояться отключения от SWIFT — всё равно что бояться отключения от Beeline. Да, это неприятно и создаёт неудобства, но всегда можно перейти на «МТС» или «Мегафон» — то есть на другие каналы коммуникации. Придётся привыкнуть и наладить новые связи с банками, но всё это решаемо и вовсе не так страшно, как кажется.</p>
 
+  <!-- Кнопка "На главную" -->
   <div class="back">
     <a href="index.html">← На главную</a>
   </div>
