@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sergei Olevskii — статьи и аналитика</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sergei Olevskii — аналитика, финтех и Африка</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #fafafa;
-      color: #222;
-      max-width: 860px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:#fafafa;
+      color:#222;
+      margin:0;
+      padding:0;
+      display:block;
     }
-    header {
-      text-align: center;
-      margin-bottom: 50px;
+    .wrap {
+      max-width:880px;
+      margin:36px auto;
+      padding:20px;
     }
-    h1 {
-      font-size: 30px;
-      margin-bottom: 5px;
+    header { text-align:center; margin-bottom:20px;}
+    header h1 { margin:0; font-size:30px; }
+    header p.lead { margin:6px 0 0; color:#555; }
+    .bio {
+      background:#fff; border-radius:10px; padding:18px; box-shadow:0 2px 6px rgba(0,0,0,0.04);
+      margin-bottom:20px;
     }
-    h2 {
-      font-size: 22px;
-      margin-top: 40px;
-      margin-bottom: 10px;
+    .bio p { margin:10px 0; text-align:justify; }
+    .articles { margin-top:18px; }
+    .card {
+      background:#fff; border-radius:10px; padding:18px; box-shadow:0 2px 6px rgba(0,0,0,0.04);
+      margin-bottom:14px;
     }
-    p {
-      margin-bottom: 15px;
-      text-align: justify;
-    }
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .article {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      margin-bottom: 25px;
-    }
-    .desc {
-      color: #555;
-      font-size: 15px;
-      margin-top: 8px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin-top: 40px;
-    }
+    .card h3 { margin:0 0 6px 0; font-size:18px; }
+    .meta { color:#777; font-size:13px; margin-top:6px; }
+    a { color:#0056b3; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { text-align:center; color:#777; margin-top:28px; font-size:14px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Sergei Olevskii</h1>
-    <p>Аналитика, финтех и международный бизнес</p>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Sergei Olevskii</h1>
+      <p class="lead">Аналитика • Финтех • Международные платежи • Африка</p>
+    </header>
 
-  <section>
-    <p>Родился в Москве в 1976 году. Играл в хоккей за юношескую команду «Спартак». Учился в США и Канаде, проходил программы в Оксфорде. Жил и работал в Нигерии, участвовал в горнорудном проекте.</p>
+    <section class="bio">
+      <p><strong>Обо мне.</strong> Родился в Москве в 1976 году. Играл в хоккей за юношескую команду «Спартак». Учился в США и Канаде, проходил программы в Оксфорде. Жил и работал в Нигерии, участвовал в горнорудном проекте.</p>
 
-    <p>Специалист с 15-летним опытом в области денежных переводов и платежей. Участвовал в рабочей группе по 161-ФЗ о национальной платёжной системе. Работал в системах «Юнистрим», «Лидер», Transfast (США), Valutrans (Италия) и консультировал Earthport (Великобритания). После покупки Transfast компанией Mastercard отвечал за Восточную Европу в экосистеме Mastercard.</p>
-  </section>
+      <p>Специалист с более чем 15-летним опытом в сфере международных денежных переводов и платёжных систем. Участвовал в рабочей группе при подготовке Федерального закона №161-ФЗ «О национальной платёжной системе». Работал в системах «Юнистрим», «Лидер», Transfast (США), Valutrans Spa (Италия) и консультировал Earthport (UK). После приобретения Transfast компанией Mastercard работал в экосистеме Mastercard, отвечая за Восточную Европу.</p>
 
-  <section>
-    <h2>Статьи</h2>
+      <p>Контакты: <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a> | <a href="https://t.me/sergeiolevskii" target="_blank">Telegram</a></p>
+    </section>
 
-    <div class="article">
-      <h3><a href="fintech.html">Финтех и международные платежи</a></h3>
-      <p class="desc">О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему с скрытыми потоками и необходимостью жёсткого регулирования.</p>
-      <p><small>Март 2025</small></p>
-    </div>
+    <section class="articles">
+      <h2>Статьи</h2>
 
-    <div class="article">
-      <h3><a href="payments.html">Платёжные системы</a></h3>
-      <p class="desc">Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным каналам международных коммуникаций.</p>
-      <p><small>Май 2025</small></p>
-    </div>
-  </section>
+      <div class="card">
+        <h3><a href="fintech.html">Финтех и международные платежи</a></h3>
+        <p>
+          О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в многослойную систему с мискодингом, скрытыми потоками и необходимостью жёсткого регулирования. (Март 2025)
+        </p>
+        <div class="meta">Март 2025</div>
+      </div>
 
-  <footer>
-    © 2025 Sergei Olevskii
-  </footer>
+      <div class="card">
+        <h3><a href="payments.html">Платёжные системы</a></h3>
+        <p>
+          Почему отключение от SWIFT — это не катастрофа, а переход к альтернативным каналам; роль Transfast, Earthport, RIA и национальных систем (Юнистрим). (Май 2025)
+        </p>
+        <div class="meta">Май 2025</div>
+      </div>
+
+      <div class="card">
+        <h3><a href="sanctions.html">Санкции и финансовые ограничения</a></h3>
+        <p>
+          Аналитика по тому, как санкции меняют архитектуру трансграничных расчётов, и что должны делать регуляторы и платежные провайдеры. (в разработке)
+        </p>
+        <div class="meta">В разработке</div>
+      </div>
+
+      <div class="card">
+        <h3><a href="nigeria.html">Нигерия и сырьевой бизнес</a></h3>
+        <p>
+          Опыт участия в горнорудном проекте, практические наблюдения и уроки для инвесторов на африканском рынке. (в разработке)
+        </p>
+        <div class="meta">В разработке</div>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2025 Sergei Olevskii
+    </footer>
+  </div>
 </body>
 </html>
