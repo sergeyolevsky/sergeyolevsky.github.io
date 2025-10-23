@@ -5,40 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сергей Олевский</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      color: #222222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #555555;
+      margin-bottom: 30px;
+    }
+
+    .bio p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .articles {
+      margin-top: 40px;
+    }
+
+    .article-link {
+      display: block;
+      font-family: 'Georgia', serif;
+      font-size: 24px;
+      color: #1a73e8;
+      text-decoration: none;
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+
+    .article-link:hover {
+      text-decoration: underline;
+    }
+
+    .article-description {
+      font-size: 16px;
+      color: #555555;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Сергей Олевский</h1>
-      <p class="subtitle">Финансовая аналитика, международные расчёты, геоэкономика</p>
-    </header>
+    <h1>Сергей Олевский</h1>
+    <p class="subtitle">Финансовая аналитика, международные расчёты, геоэкономика</p>
 
-    <main>
-      <div class="articles">
+    <div class="bio">
+      <p>Родился в Москве в 1976 году. Играл в хоккей за юношескую команду «Спартак». Учился в США и Канаде, проходил программы в Оксфорде. Жил и работал в Нигерии, участвовал в горнорудном проекте.</p>
+      <p>Специалист с 15-летним опытом в области денежных переводов и платежей. Работал в рабочей группе при подготовке 161-ФЗ о национальной платежной системе и в системах Юнистрим, Лидер, Transfast (США), Valutrans Spa (Италия) и был консультантом в Earthport (UK). После того как Transfast был куплен Mastercard, работал в экосистеме Mastercard, отвечая за Восточную Европу в Transfast.</p>
+      <p>Контакт: <a href="https://t.me/solevsky">@solevsky</a></p>
+    </div>
 
-        <!-- Статья 1 -->
-        <div class="article-preview">
-          <h2 class="article-title"><a href="fintech.html">Финтех и международные платежи</a></h2>
-          <p class="date">Март 2025</p>
-          <p>О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему с скрытыми потоками и необходимостью жёсткого регулирования.</p>
-        </div>
+    <div class="articles">
+      <a class="article-link" href="fintech.html">Финтех и международные платежи</a>
+      <p class="article-description">О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему с скрытыми потоками и необходимостью жёсткого регулирования.</p>
 
-        <!-- Статья 2 -->
-        <div class="article-preview">
-          <h2 class="article-title"><a href="payments.html">Платёжные системы</a></h2>
-          <p class="date">Май 2025</p>
-          <p>Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным каналам международных коммуникаций.</p>
-        </div>
+      <a class="article-link" href="payments.html">Платёжные системы</a>
+      <p class="article-description">Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным каналам международных коммуникаций.</p>
 
-        <!-- Статья 3 -->
-        <div class="article-preview">
-          <h2 class="article-title"><a href="sanctions.html">Санкции и финансовые ограничения</a></h2>
-          <p class="date">Октябрь 2025</p>
-          <p>Современные санкции перестали быть разовым инструментом: они стали постоянной частью глобальной экономики. Новые платёжные инфраструктуры позволяют обходить традиционные западные механизмы.</p>
-        </div>
-
-      </div>
-    </main>
+      <a class="article-link" href="sanctions.html">Санкции и финансовые ограничения</a>
+      <p class="article-description">Современные санкции стали частью глобальной экономической реальности, а их эффективность сильно зависит от адаптации новых финансовых каналов и технологий.</p>
+    </div>
   </div>
 </body>
 </html>
