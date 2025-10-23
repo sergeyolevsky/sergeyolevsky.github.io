@@ -1,96 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sergei Olevskii — аналитика, финтех и Африка</title>
-  <style>
-    body {
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      background:#fafafa;
-      color:#222;
-      margin:0;
-      padding:0;
-      display:block;
-    }
-    .wrap {
-      max-width:880px;
-      margin:36px auto;
-      padding:20px;
-    }
-    header { text-align:center; margin-bottom:20px;}
-    header h1 { margin:0; font-size:30px; }
-    header p.lead { margin:6px 0 0; color:#555; }
-    .bio {
-      background:#fff; border-radius:10px; padding:18px; box-shadow:0 2px 6px rgba(0,0,0,0.04);
-      margin-bottom:20px;
-    }
-    .bio p { margin:10px 0; text-align:justify; }
-    .articles { margin-top:18px; }
-    .card {
-      background:#fff; border-radius:10px; padding:18px; box-shadow:0 2px 6px rgba(0,0,0,0.04);
-      margin-bottom:14px;
-    }
-    .card h3 { margin:0 0 6px 0; font-size:18px; }
-    .meta { color:#777; font-size:13px; margin-top:6px; }
-    a { color:#0056b3; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    footer { text-align:center; color:#777; margin-top:28px; font-size:14px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сергей Олевский</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
+  <div class="container">
     <header>
-      <h1>Sergei Olevskii</h1>
-      <p class="lead">Аналитика • Финтех • Международные платежи • Африка</p>
+      <h1>Сергей Олевский</h1>
+      <p class="subtitle">Финансовая аналитика, международные расчёты, геоэкономика</p>
     </header>
 
-    <section class="bio">
-      <p><strong>Обо мне.</strong> Родился в Москве в 1976 году. Играл в хоккей за юношескую команду «Спартак». Учился в США и Канаде, проходил программы в Оксфорде. Жил и работал в Нигерии, участвовал в горнорудном проекте.</p>
+    <main>
+      <div class="articles">
 
-      <p>Специалист с более чем 15-летним опытом в сфере международных денежных переводов и платёжных систем. Участвовал в рабочей группе при подготовке Федерального закона №161-ФЗ «О национальной платёжной системе». Работал в системах «Юнистрим», «Лидер», Transfast (США), Valutrans Spa (Италия) и консультировал Earthport (UK). После приобретения Transfast компанией Mastercard работал в экосистеме Mastercard, отвечая за Восточную Европу.</p>
+        <!-- Статья 1 -->
+        <div class="article-preview">
+          <h2 class="article-title"><a href="fintech.html">Финтех и международные платежи</a></h2>
+          <p class="date">Март 2025</p>
+          <p>О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему с скрытыми потоками и необходимостью жёсткого регулирования.</p>
+        </div>
 
-      <p>Контакты: <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a> | <a href="https://t.me/solevsky" target="_blank">Telegram</a></p>
-    </section>
+        <!-- Статья 2 -->
+        <div class="article-preview">
+          <h2 class="article-title"><a href="payments.html">Платёжные системы</a></h2>
+          <p class="date">Май 2025</p>
+          <p>Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным каналам международных коммуникаций.</p>
+        </div>
 
-    <section class="articles">
-      <h2>Статьи</h2>
+        <!-- Статья 3 -->
+        <div class="article-preview">
+          <h2 class="article-title"><a href="sanctions.html">Санкции и финансовые ограничения</a></h2>
+          <p class="date">Октябрь 2025</p>
+          <p>Современные санкции перестали быть разовым инструментом: они стали постоянной частью глобальной экономики. Новые платёжные инфраструктуры позволяют обходить традиционные западные механизмы.</p>
+        </div>
 
-      <div class="card">
-        <h3><a href="fintech.html">Финтех и международные платежи</a></h3>
-        <p>
-          О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в многослойную систему с мискодингом, скрытыми потоками и необходимостью жёсткого регулирования.
-        </p>
-        <div class="meta">Март 2025</div>
       </div>
-
-      <div class="card">
-        <h3><a href="payments.html">Платёжные системы</a></h3>
-        <p>
-          Почему отключение от SWIFT — это не катастрофа, а переход к альтернативным каналам; роль Transfast, Earthport, RIA и национальных систем (Юнистрим).
-        </p>
-        <div class="meta">Май 2025</div>
-      </div>
-
-      <<div class="article">
-  <a href="sanctions.html"><h2>Санкции и финансовые ограничения</h2></a>
-  <p class="date">Октябрь 2025</p>
-  <p>Как санкции перестали быть эффективным инструментом и почему мировая финансовая архитектура учится жить без центра контроля</p>
-</div>
-
-      <div class="card">
-        <h3><a href="nigeria.html">Нигерия и сырьевой бизнес</a></h3>
-        <p>
-          Опыт участия в горнорудном проекте, практические наблюдения и уроки для инвесторов на африканском рынке.
-        </p>
-        <div class="meta">В разработке</div>
-      </div>
-
-    </section>
-
-    <footer>
-      © 2025 Sergei Olevskii
-    </footer>
+    </main>
   </div>
 </body>
 </html>
