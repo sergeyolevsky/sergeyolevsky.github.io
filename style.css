@@ -1,0 +1,90 @@
+/* Общие стили страницы */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* H1 для главной страницы и статей */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* H2 для разделов статьи */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Параграфы */
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Дата статьи */
+.date {
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Кнопка «На главную» */
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  background-color: #007bff; /* синий цвет */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+  background-color: #0056b3; /* темный синий при наведении */
+}
+
+/* Ссылки на главной странице */
+.article-link {
+  display: block;
+  font-size: 20px;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.article-link:hover {
+  color: #0056b3;
+}
