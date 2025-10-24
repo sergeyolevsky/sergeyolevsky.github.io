@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сергей Олевский</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Сергей Олевский — Финансовая аналитика</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Сергей Олевский</h1>
-    <p class="subtitle">Финансовая аналитика, международные расчёты, геоэкономика</p>
+    <header>
+      <h1>Сергей Олевский</h1>
+      <div class="subtitle">Финансовая аналитика, международные расчёты, геоэкономика</div>
+    </header>
 
-    <div class="bio">
-      <p>Родился в Москве в 1976 году. Играл в хоккей за юношескую команду «Спартак». Учился в США и Канаде, проходил программы в Оксфорде. Жил и работал в Нигерии, участвовал в горнорудном проекте.</p>
-      <p>Специалист с 15-летним опытом в области денежных переводов и платежей. Работал в рабочей группе при подготовке 161-ФЗ о национальной платежной системе и в системах Юнистрим, Лидер, Transfast (США), Valutrans Spa (Италия) и был консультантом в Earthport (UK). После того как Transfast был куплен Mastercard, работал в экосистеме Mastercard, отвечая за Восточную Европу в Transfast.</p>
-      <p>Контакт: <a href="https://t.me/solevsky">@solevsky</a></p>
-    </div>
+    <section class="bio" aria-labelledby="bio">
+      <p><strong>Эксперт в области платёжных систем и трансграничных переводов.</strong> Обладает уникальным опытом работы на рынке Нигерии и практическим опытом участия в горнорудных проектах и платежных проектах в разных юрисдикциях.</p>
+      <p>Специалист с более чем 15-летним опытом в платежной индустрии: участие в рабочей группе при подготовке 161-ФЗ, работа в Юнистрим, Лидер, Transfast (США), Valutrans Spa (Италия), консультирование Earthport (UK) и год в экосистеме Mastercard.</p>
 
-    <div class="articles">
-      <a class="article-link" href="fintech.html">Финтех и международные платежи</a>
-      <p class="article-description">О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему с скрытыми потоками и необходимостью жёсткого регулирования.</p>
+      <div class="contacts" aria-label="Контакты">
+        <p><strong>Контакты</strong></p>
+        <ul>
+          <li>Telegram: <a href="https://t.me/solevsky" target="_blank" rel="noopener noreferrer">@solevsky</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank" rel="noopener noreferrer">sergei-olevskii-b6154015</a></li>
+        </ul>
+      </div>
+    </section>
 
-      <a class="article-link" href="payments.html">Платёжные системы</a>
-      <p class="article-description">Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным каналам международных коммуникаций.</p>
+    <section class="articles" aria-labelledby="articles">
+      <h2 style="margin-top:18px; margin-bottom:10px; font-family:Georgia, serif;">Статьи</h2>
 
-      <a class="article-link" href="sanctions.html">Санкции и финансовые ограничения</a>
-      <p class="article-description">Современные санкции стали частью глобальной экономической реальности, а их эффективность сильно зависит от адаптации новых финансовых каналов и технологий.</p>
-    </div>
+      <div class="article-preview">
+        <div class="article-title"><a href="fintech.html">Финтех и международные платежи</a></div>
+        <div class="article-desc">О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в многослойную систему с мискодингом, скрытыми потоками и необходимостью жёсткого регулирования.</div>
+        <div class="article-meta">Март 2025</div>
+      </div>
+
+      <div class="article-preview">
+        <div class="article-title"><a href="payments.html">Платёжные системы</a></div>
+        <div class="article-desc">Почему отключение от SWIFT — это не катастрофа, а переход к альтернативным каналам; роль Transfast, Earthport, RIA и национальных систем (Юнистрим).</div>
+        <div class="article-meta">Май 2025</div>
+      </div>
+
+      <div class="article-preview">
+        <div class="article-title"><a href="sanctions.html">Санкции и финансовые ограничения</a></div>
+        <div class="article-desc">Как санкции меняют маршруты международных расчётов, и почему сейчас важнее аналитика и кооперация, а не только формальные запреты.</div>
+        <div class="article-meta">Октябрь 2025</div>
+      </div>
+
+      <div class="article-preview">
+        <div class="article-title"><a href="nigeria.html">Рынок Нигерии — опыт и наблюдения</a></div>
+        <div class="article-desc">Практические наблюдения и уроки по участию в горнорудном проекте и работе на нигерийском рынке. (в разработке)</div>
+        <div class="article-meta">В разработке</div>
+      </div>
+
+      <div class="article-preview">
+        <div class="article-title"><a href="cbdc.html">CBDC — цифровые валюты центробанков</a></div>
+        <div class="article-desc">Краткий обзор трендов и возможных последствий внедрения CBDC. (в разработке)</div>
+        <div class="article-meta">В разработке</div>
+      </div>
+
+      <div class="article-preview">
+        <div class="article-title"><a href="crypto.html">Криптовалюты и регулирование</a></div>
+        <div class="article-desc">Точки пересечения регуляции, финтеха и практической интеграции крипто-решений в платежные экосистемы. (в разработке)</div>
+        <div class="article-meta">В разработке</div>
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      © Сергей Олевский — 2025
+    </footer>
   </div>
 </body>
 </html>
