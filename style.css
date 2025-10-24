@@ -1,134 +1,109 @@
-/* Общие стили для всего сайта */
+/* Общие стили */
 body {
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
-    color: #333;
+    color: #222;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 15px;
 }
 
-/* Заголовки */
 h1 {
-    font-family: "Georgia", serif;
-    font-size: 2.5em;
-    color: #1a1a1a;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-family: "Georgia", serif;
-    font-size: 1.8em;
-    color: #222;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-/* Параграфы */
-p {
-    font-size: 1em;
-    color: #333;
+    font-size: 36px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-/* Даты статей */
-p.date {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Контакты */
-.contacts {
-    margin: 20px 0;
-}
-
-.contacts a {
-    text-decoration: none;
-    color: #0066cc;
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-.contacts a:hover {
-    text-decoration: underline;
-}
-
-/* Раздел статьи на главной странице */
-.articles ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.articles li {
-    margin-bottom: 25px;
-}
-
-.articles a {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.articles a:hover {
-    text-decoration: underline;
-}
-
-.annotation {
-    font-size: 0.95em;
-    color: #555;
-    margin-top: 5px;
-}
-
-/* Кнопка "На главную" */
-.back-button {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.back-button a {
-    display: inline-block;
-    background-color: #0066cc;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.back-button a:hover {
-    background-color: #004999;
-}
-
-/* Горизонтальная линия */
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #ccc;
-    margin: 30px 0;
-}
-
-/* Списки и ссылки внутри статей */
-ul, ol {
-    margin-left: 20px;
-}
-
-ul li, ol li {
+h2 {
+    font-size: 24px;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.article-annotation {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
 a {
-    color: #0066cc;
+    text-decoration: none;
+    color: #0056b3;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #003d80;
+}
+
+.main-links {
+    margin-top: 30px;
+}
+
+.main-links a {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.main-links a:hover {
+    color: #003d80;
+}
+
+.article-list {
+    margin-top: 40px;
+}
+
+.article-item {
+    margin-bottom: 25px;
+}
+
+.article-item a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.article-item a:hover {
+    color: #003d80;
+}
+
+.article-item .annotation {
+    font-size: 16px;
+    color: #444;
 }
