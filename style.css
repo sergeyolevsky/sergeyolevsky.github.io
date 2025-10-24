@@ -1,85 +1,109 @@
-/* ===== ОСНОВНОЙ СТИЛЬ ===== */
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f5f6fa;
-  color: #222;
-  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .container {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  border-radius: 16px;
 }
 
-/* ===== ЗАГОЛОВОК ===== */
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
+/* ===== ЗАГОЛОВКИ ===== */
 h1 {
   font-size: 2.2em;
-  margin: 0;
-  color: #1a237e;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
+h2 {
+  font-size: 1.6em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #37474f;
+}
+
+/* ===== ЛИНИЯ ПОД НАЗВАНИЕМ ===== */
+.title-line {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, #cfd8dc, #90a4ae);
+  margin: 12px auto;
+  width: 60px;
+}
+
+/* ===== ПОДЗАГОЛОВКИ ===== */
 .subtitle {
   font-size: 1.1em;
-  color: #555;
-  margin-top: 8px;
+  text-align: center;
+  color: #546e7a;
+  margin-bottom: 20px;
 }
 
-/* ===== СЕКЦИИ ===== */
-h2 {
-  border-bottom: 2px solid #e3e3e3;
-  padding-bottom: 5px;
-  color: #1a237e;
+/* ===== ТЕКСТ ===== */
+p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.7;
 }
 
-section {
-  margin-bottom: 35px;
-}
-
-/* ===== ССЫЛКИ ===== */
-a {
-  color: #1565c0;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #0d47a1;
-  text-decoration: underline;
-}
-
-/* ===== СПИСОК СТАТЕЙ ===== */
-.articles ul {
-  list-style: none;
+/* ===== СПИСКИ ===== */
+ul {
+  list-style-type: none;
   padding: 0;
 }
 
-.articles li {
-  margin: 10px 0;
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1e88e5;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== КНОПКИ ===== */
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e88e5; /* синий */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.back-button a:hover {
+  background-color: #1565c0;
 }
 
 /* ===== КОНТАКТЫ ===== */
-.contacts p {
-  text-align: center;
-  margin-top: 10px;
+.contacts a {
+  color: #1e88e5;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
-/* ===== БЛОК "О СЕБЕ" ===== */
-.bio {
-  margin-top: 40px;
-  padding-top: 15px;
-  text-align: center;
-  font-style: italic;
-  color: #444;
-  border-top: 1px solid #ddd;
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+/* ===== РАЗДЕЛЫ ===== */
+section {
+  margin-bottom: 30px;
 }
