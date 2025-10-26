@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сергей Олевский</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sergei Olevsky — Аналитика и статьи</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #121212;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin: 0;
+      color: #f5f5f5;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .article {
+      margin-bottom: 40px;
+      padding: 25px;
+      border: 1px solid #2b2b2b;
+      border-radius: 12px;
+      background: #1a1a1a;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .article:hover {
+      transform: translateY(-4px);
+      background: #222;
+    }
+
+    .article h2 {
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
+
+    .article a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+
+    .article a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #333;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Сергей Олевский</h1>
-        <p>Эксперт в области международных платежей и денежных переводов с более чем 15-летним опытом. Родился в Москве, играл в хоккей за юношескую команду московского Спартака, учился в США и Канаде, проходил программы в Оксфорде. Долгое время работал в Нигерии, создавая и развивая горнорудные и финансовые проекты. Сегодня — на стыке технологий, финансов и геоэкономики, исследуя новые подходы к международным расчётам и практике финансовых операций.</p>
+  <header>
+    <h1>Sergei Olevsky — Аналитика и статьи</h1>
+  </header>
 
-        <div class="social-links">
-            <a href="https://t.me/solevsky" target="_blank">Telegram</a>
-            <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
-        </div>
-
-        <hr>
-
-        <div class="article-preview">
-            <h3><a href="fintech.html">Финтех и международные платежи</a></h3>
-            <p>О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему с множеством скрытых потоков и необходимостью жёсткого регулирования.</p>
-        </div>
-
-        <div class="article-preview">
-            <h3><a href="payments.html">Платёжные системы</a></h3>
-            <p>Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным каналам международных коммуникаций.</p>
-        </div>
-
-        <div class="article-preview">
-            <h3><a href="sanctions.html">Санкции и финансовые ограничения</a></h3>
-            <p>Современные санкции уже не работают как раньше, и новые финансовые системы позволяют обходить ограничительные меры, создавая новые архитектуры платежей.</p>
-        </div>
+  <main>
+    <div class="article">
+      <h2><a href="swift.html">Платёжные системы и SWIFT</a></h2>
+      <p>SWIFT — это не больше чем банковский мессенджер. Его отключение не парализует финансовые потоки, а лишь создаёт стимулы для альтернативных коммуникаций и расчётных систем.</p>
     </div>
+
+    <div class="article">
+      <h2><a href="sanctions.html">Санкции и финансовые ограничения</a></h2>
+      <p>Почему санкции перестали быть универсальным инструментом давления и как мировая экономика адаптируется к новой архитектуре ограничений и обходных схем.</p>
+    </div>
+
+    <div class="article">
+      <h2><a href="fintech.html">Финтех и регуляция</a></h2>
+      <p>Как меняется роль государства и банков в эпоху цифровых валют, платформенных экосистем и искусственного интеллекта в финансах.</p>
+    </div>
+
+    <div class="article">
+      <h2><a href="africa.html">Как работать в Африке: нигерийский урок для внешнего бизнеса</a></h2>
+      <p>О том, как выстраивать партнёрство и доверие в Африке, на примере Нигерии — страны, где успех зависит не от контрактов, а от понимания культуры и традиций.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Sergei Olevsky</p>
+  </footer>
 </body>
 </html>
