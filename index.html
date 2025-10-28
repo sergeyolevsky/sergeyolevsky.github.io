@@ -3,71 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сергей Олевский — международные финансы и проекты в Африке</title>
+  <title>Сергей Олевский — международные финансы и Африка</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      margin: 0;
+      background-color: #0e0e0e;
+      color: #e0e0e0;
       font-family: 'Segoe UI', Roboto, sans-serif;
-      background: #0e0e0e;
-      color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 40px;
-      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .frame {
+    .container {
       max-width: 900px;
-      width: 100%;
-      border: 2px solid #444;
-      border-radius: 18px;
+      margin: 50px auto;
+      background-color: #141414;
       padding: 60px;
-      background: linear-gradient(145deg, #111, #1a1a1a);
-      box-shadow: 0 0 40px rgba(255,255,255,0.05);
+      border-radius: 18px;
+      border: 1px solid #333;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
     }
 
     h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.3em;
       text-align: center;
-      color: #e4e4e4;
-      letter-spacing: 0.5px;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #f5f5f5;
     }
 
     h2 {
-      font-size: 1.3em;
       text-align: center;
-      color: #aaa;
       font-weight: normal;
+      color: #aaa;
       margin-bottom: 40px;
     }
 
     p {
       line-height: 1.7;
-      color: #ddd;
-      font-size: 1.05em;
-      margin-bottom: 1.2em;
       text-align: justify;
+      font-size: 1.05em;
+      color: #dcdcdc;
     }
 
-    .links {
+    hr {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 50px 0;
+    }
+
+    .article {
+      margin-bottom: 50px;
+    }
+
+    .article h3 {
+      color: #66aaff;
+      margin-bottom: 10px;
+      font-size: 1.4em;
+    }
+
+    .article p {
+      margin-bottom: 15px;
+      color: #cfcfcf;
+    }
+
+    .read-more {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
-    a {
+    .read-more a {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-weight: 500;
+    }
+
+    .read-more a:hover {
+      background-color: #339cff;
+    }
+
+    .contacts {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .contacts a {
       color: #66aaff;
       text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: all 0.3s;
+      margin: 0 10px;
+      transition: color 0.3s;
     }
 
-    a:hover {
-      border-color: #66aaff;
+    .contacts a:hover {
+      color: #339cff;
     }
 
     footer {
@@ -80,41 +112,61 @@
     }
 
     @media (max-width: 700px) {
-      .frame {
+      .container {
         padding: 30px 20px;
       }
       h1 { font-size: 2em; }
-      p { font-size: 1em; }
     }
   </style>
 </head>
+
 <body>
-  <div class="frame">
+  <div class="container">
     <h1>Сергей Олевский</h1>
-    <h2>Международные финансы, санкционная аналитика и проекты в Африке</h2>
+    <h2>Практик в сфере международных платежей и трансграничных финансов</h2>
 
     <p>
-      Эксперт в области международных финансов, расчётных систем и санкционной политики. 
-      Автор аналитических материалов о трансформации мировой экономики, новых архитектурах платежей и ограничениях глобальных финансовых потоков.
+      Работал в компаниях <b>Transfast</b> (впоследствии — Mastercard) и <b>Earthport</b>, участвовал в создании и развитии проектов в странах СНГ, Ближнего Востока и Африки, включая Нигерию, где занимался разработкой месторождения колумбита (Nb-Ta) и продолжает оставаться связан с этим направлением. Сегодня — на стыке технологий, финансов и геоэкономики, исследуя новые подходы к международным расчётам и глобальным стратегиям развития.
     </p>
 
-    <p>
-      Соучредитель компании <b>Mining Technologies Co. Ltd</b> (Джос, Нигерия), работающей над освоением месторождения колумбита (Nb-Ta) 
-      — стратегического сырья для металлургии и высоких технологий. Сохраняю участие в развитии проекта и стратегических партнёрствах в регионе.
-    </p>
+    <hr>
 
- <p>
-  Мой опыт охватывает страны СНГ, Ближнего Востока и Африки — от проектного финансирования и сырьевых контрактов
-  до разработки инструментов для обеспечения устойчивости платежей в условиях ограничений и оптимизации трансграничных расчётов.
-</p>
+    <div class="article">
+      <h3><a href="fintech.html">Финтех и международные платежи</a></h3>
+      <p><i>Март 2025</i></p>
+      <p>О том, как международные переводы перестали быть просто оплатой товаров и услуг, превратившись в сложную систему со скрытыми потоками и необходимостью жёсткого регулирования.</p>
+      <div class="read-more"><a href="fintech.html">Читать статью</a></div>
+    </div>
 
-    <div class="links">
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-      <a href="https://t.me/solevsky" target="_blank">Telegram</a>
+    <div class="article">
+      <h3><a href="payments.html">Платёжные системы</a></h3>
+      <p><i>Май 2025</i></p>
+      <p>SWIFT — это всего лишь банковский мессенджер, и его отключение означает лишь переход на альтернативные способы коммуникаций между банками.</p>
+      <div class="read-more"><a href="payments.html">Читать статью</a></div>
+    </div>
+
+    <div class="article">
+      <h3><a href="sanctions.html">Санкции и финансовые ограничения</a></h3>
+      <p><i>Октябрь 2025</i></p>
+      <p>Современные санкции превратились из инструмента исключительных случаев в элемент глобальной финансовой экосистемы. Но эффективность их применения всё чаще вызывает сомнения.</p>
+      <div class="read-more"><a href="sanctions.html">Читать статью</a></div>
+    </div>
+
+    <div class="article">
+      <h3><a href="africa.html">Как работать в Африке: нигерийский урок для внешнего бизнеса</a></h3>
+      <p><i>Октябрь 2025</i></p>
+      <p>Почему Африка — это не место для тех, кто спешит, и как в Нигерии формируется уникальная культура деловых отношений, где уважение и доверие значат больше, чем капитал.</p>
+      <div class="read-more"><a href="africa.html">Читать статью</a></div>
+    </div>
+
+    <div class="contacts">
+      <p><b>Контакты:</b></p>
+      <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+      <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
     </div>
 
     <footer>
-      © 2025 Сергей Олевский. Все права защищены.
+      © 2025 Сергей Олевский
     </footer>
   </div>
 </body>
