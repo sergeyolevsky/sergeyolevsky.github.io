@@ -1,118 +1,125 @@
-/* Общие настройки */
+/* ======= Общие настройки ======= */
 body {
-  font-family: "Georgia", "Times New Roman", serif;
-  background-color: #fafafa;
-  color: #222;
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
-/* Заголовок */
-header {
+/* ======= Основной контейнер ======= */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #141414;
+  padding: 60px;
+  border-radius: 18px;
+  border: 1px solid #333;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ======= Заголовки ======= */
+h1 {
   text-align: center;
-  padding: 2rem 1rem 1.5rem;
-  border-bottom: 1px solid #ddd;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #f5f5f5;
 }
 
-header h1 {
-  font-size: 2.2rem;
-  margin: 0;
-  color: #1a1a1a;
-  letter-spacing: 0.5px;
+h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #aaa;
+  margin-bottom: 40px;
 }
 
-/* Биография */
-.bio-card {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.8rem 2rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-}
-
-.bio-card p {
-  font-size: 1.05rem;
+/* ======= Основной текст ======= */
+p {
+  line-height: 1.7;
   text-align: justify;
-  margin: 0;
+  font-size: 1.05em;
+  color: #dcdcdc;
 }
 
-/* Раздел статей */
-.articles {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 50px 0;
 }
 
-.articles h2 {
-  font-size: 1.6rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1rem;
-  color: #111;
+/* ======= Блоки статей ======= */
+.article {
+  margin-bottom: 50px;
 }
 
-article {
-  margin-bottom: 1.4rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+.article h3 {
+  color: #66aaff;
+  margin-bottom: 10px;
+  font-size: 1.4em;
 }
 
-.title-link {
-  display: inline-block;
-  font-size: 1.15rem;
-  font-weight: bold;
+.article p {
+  margin-bottom: 15px;
+  color: #cfcfcf;
+}
+
+/* ======= Кнопка “Читать статью” ======= */
+.read-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.read-more a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
   text-decoration: none;
-  color: #004080;
-  transition: color 0.2s ease;
+  transition: background 0.3s;
+  font-weight: 500;
 }
 
-.title-link:hover {
-  color: #c0392b;
+.read-more a:hover {
+  background-color: #339cff;
 }
 
-.annotation {
-  margin: 0.4rem 0 0;
-  color: #444;
-  font-size: 0.98rem;
-}
-
-/* Контакты */
+/* ======= Контакты ======= */
 .contacts {
-  max-width: 800px;
-  margin: 3rem auto 2rem;
-  padding: 0 1rem;
+  text-align: center;
+  margin-top: 60px;
 }
 
-.contacts h2 {
-  font-size: 1.4rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.4rem;
-  margin-bottom: 0.8rem;
-  color: #111;
-}
-
-.contact-link {
-  display: inline-block;
-  margin-bottom: 0.4rem;
-  font-size: 1rem;
-  color: #004080;
+.contacts a {
+  color: #66aaff;
   text-decoration: none;
-  transition: color 0.2s ease;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-.contact-link:hover {
-  color: #c0392b;
+.contacts a:hover {
+  color: #339cff;
 }
 
-/* Подвал */
+/* ======= Подвал ======= */
 footer {
   text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-  margin-top: 2rem;
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 60px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+/* ======= Адаптивная версия ======= */
+@media (max-width: 700px) {
+  .container {
+    padding: 30px 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
 }
