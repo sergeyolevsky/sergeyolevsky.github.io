@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Сергей Олевский</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сергей Олевский — международные финансы и проекты в Африке</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #0e0e0e;
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .frame {
+      max-width: 900px;
+      width: 100%;
+      border: 2px solid #444;
+      border-radius: 18px;
+      padding: 60px;
+      background: linear-gradient(145deg, #111, #1a1a1a);
+      box-shadow: 0 0 40px rgba(255,255,255,0.05);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.3em;
+      text-align: center;
+      color: #e4e4e4;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      text-align: center;
+      color: #aaa;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #ddd;
+      font-size: 1.05em;
+      margin-bottom: 1.2em;
+      text-align: justify;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #66aaff;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      border-color: #66aaff;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      margin-top: 60px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .frame {
+        padding: 30px 20px;
+      }
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <div class="frame">
     <h1>Сергей Олевский</h1>
-  </header>
+    <h2>Международные финансы, санкционная аналитика и проекты в Африке</h2>
 
-  <main>
-    <section class="bio-card">
-      <p>
-        Практик с более чем 15-летним опытом в сфере международных платежей и трансграничных финансов.
-        Работал в компаниях <strong>Transfast</strong> (впоследствии — <strong>Mastercard</strong>) и <strong>Earthport</strong>,
-        участвовал в создании и развитии проектов в странах СНГ, Ближнего Востока и Африки,
-        включая Нигерию, где занимался разработкой месторождения колумбита (Nb–Ta)
-        и продолжает оставаться связан с этим направлением.
-        Сегодня — на стыке технологий, финансов и геоэкономики, исследуя новые подходы
-        к международным расчётам и глобальным стратегиям развития.
-      </p>
-    </section>
+    <p>
+      Эксперт в области международных финансов, расчётных систем и санкционной политики. 
+      Автор аналитических материалов о трансформации мировой экономики, новых архитектурах платежей и ограничениях глобальных финансовых потоков.
+    </p>
 
-    <section class="articles">
-      <h2>Статьи</h2>
+    <p>
+      Соучредитель компании <b>Mining Technologies Co. Ltd</b> (Джос, Нигерия), работающей над освоением месторождения колумбита (Nb-Ta) 
+      — стратегического сырья для металлургии и высоких технологий. Сохраняю участие в развитии проекта и стратегических партнёрствах в регионе.
+    </p>
 
-      <article>
-        <a href="fintech.html" class="title-link">Финтех: международные платежи</a>
-        <p class="annotation">
-          Международные платежи сегодня — не просто переводы, а инструмент влияния и адаптации
-          в условиях санкций и технологических ограничений.
-        </p>
-      </article>
+ <p>
+  Мой опыт охватывает страны СНГ, Ближнего Востока и Африки — от проектного финансирования и сырьевых контрактов
+  до разработки инструментов для обеспечения устойчивости платежей в условиях ограничений и оптимизации трансграничных расчётов.
+</p>
 
-      <article>
-        <a href="swift.html" class="title-link">Платёжные системы и SWIFT</a>
-        <p class="annotation">
-          Почему отключение от SWIFT — это не катастрофа, а лишь переход к альтернативным
-          каналам международных коммуникаций.
-        </p>
-      </article>
+    <div class="links">
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+      <a href="https://t.me/solevsky" target="_blank">Telegram</a>
+    </div>
 
-      <article>
-        <a href="sanctions.html" class="title-link">Санкции и финансовые ограничения</a>
-        <p class="annotation">
-          Как санкции меняют глобальную финансовую архитектуру и создают новые точки роста
-          для стран, способных мыслить вне старых правил.
-        </p>
-      </article>
-
-      <article>
-        <a href="africa.html" class="title-link">Как работать в Африке</a>
-        <p class="annotation">
-          Нигерия как пример африканской экономики, где сочетаются ресурсы, энергия и сложная институциональная среда.
-        </p>
-      </article>
-    </section>
-
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p>
-        <a href="https://t.me/solevsky" target="_blank" class="contact-link">Telegram</a><br />
-        <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank" class="contact-link">LinkedIn</a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Сергей Олевский</p>
-  </footer>
+    <footer>
+      © 2025 Сергей Олевский. Все права защищены.
+    </footer>
+  </div>
 </body>
 </html>
