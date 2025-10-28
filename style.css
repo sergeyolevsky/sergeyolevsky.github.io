@@ -36,10 +36,12 @@ body {
   margin-bottom: 40px;
 }
 
-/* Абзацы */
+/* Основной текст */
 p {
   font-size: 1.07em;
   margin-bottom: 1em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Заголовки статей */
