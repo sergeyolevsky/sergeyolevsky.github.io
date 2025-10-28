@@ -1,25 +1,28 @@
 body {
   font-family: "Georgia", "Times New Roman", serif;
-  background-color: #f7f5f0; /* светло-бежевый фон */
-  color: #1e2a38; /* насыщенный графитовый */
+  background-color: #f6f4ef; /* светлый бежевый */
+  color: #1f2a35;
   margin: 0;
   padding: 0;
+  line-height: 1.7;
 }
 
+/* Контейнер с рамкой */
 .container {
-  max-width: 850px;
-  margin: 50px auto;
+  max-width: 880px;
+  margin: 60px auto;
   background: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 50px 60px;
+  border-radius: 14px;
+  border: 1px solid #e1d8c9;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
 }
 
 /* Имя и подзаголовок */
 .name-title {
-  font-size: 2.4em;
+  font-size: 2.5em;
   font-weight: 600;
-  color: #1e2a38;
+  color: #1f2a35;
   text-align: center;
   margin-bottom: 8px;
   letter-spacing: 0.5px;
@@ -30,26 +33,28 @@ body {
   font-size: 1.1em;
   color: #4a5b6c;
   font-style: italic;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
-/* Общий текст */
+/* Абзацы */
 p {
-  line-height: 1.6;
-  font-size: 1.05em;
+  font-size: 1.07em;
+  margin-bottom: 1em;
 }
 
 /* Заголовки статей */
 .article h3 {
   margin-bottom: 5px;
   color: #003d66;
-  font-size: 1.3em;
+  font-size: 1.35em;
+  letter-spacing: 0.2px;
 }
 
 /* Ссылки */
 a {
   color: #005b96;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -57,7 +62,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Кнопка Читать статью */
+/* Кнопка "Читать статью" */
 .read-more {
   text-align: center;
   margin-top: 10px;
@@ -67,9 +72,10 @@ a:hover {
   display: inline-block;
   background-color: #005b96;
   color: white;
-  padding: 8px 18px;
+  padding: 8px 20px;
   border-radius: 6px;
   text-decoration: none;
+  font-size: 0.95em;
   transition: background-color 0.3s ease;
 }
 
@@ -80,8 +86,9 @@ a:hover {
 /* Контакты */
 .contacts {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 45px;
   font-size: 1em;
+  letter-spacing: 0.3px;
 }
 
 .contacts a {
@@ -95,7 +102,7 @@ a:hover {
 
 /* Разделительная линия */
 hr {
-  margin: 30px 0;
+  margin: 35px 0;
   border: 0;
   border-top: 1px solid #dcdcdc;
 }
@@ -103,7 +110,7 @@ hr {
 /* Подвал */
 footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 35px;
   font-size: 0.9em;
   color: #777;
 }
