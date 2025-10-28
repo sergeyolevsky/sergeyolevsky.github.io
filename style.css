@@ -1,7 +1,7 @@
 /* ======= Общие настройки ======= */
 body {
-  background-color: #0e0e0e;
-  color: #e0e0e0;
+  background-color: #f4f1ec;
+  color: #222;
   font-family: 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,11 +11,11 @@ body {
 .container {
   max-width: 900px;
   margin: 50px auto;
-  background-color: #141414;
+  background-color: #ffffff;
   padding: 60px;
-  border-radius: 18px;
-  border: 1px solid #333;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
 }
 
 /* ======= Заголовки ======= */
@@ -23,13 +23,13 @@ h1 {
   text-align: center;
   font-size: 2.8em;
   margin-bottom: 10px;
-  color: #f5f5f5;
+  color: #111;
 }
 
 h2 {
   text-align: center;
   font-weight: normal;
-  color: #aaa;
+  color: #555;
   margin-bottom: 40px;
 }
 
@@ -38,12 +38,12 @@ p {
   line-height: 1.7;
   text-align: justify;
   font-size: 1.05em;
-  color: #dcdcdc;
+  color: #333;
 }
 
 hr {
   border: none;
-  border-top: 1px solid #333;
+  border-top: 1px solid #ddd;
   margin: 50px 0;
 }
 
@@ -53,14 +53,14 @@ hr {
 }
 
 .article h3 {
-  color: #66aaff;
+  color: #0047ab;
   margin-bottom: 10px;
   font-size: 1.4em;
 }
 
 .article p {
   margin-bottom: 15px;
-  color: #cfcfcf;
+  color: #444;
 }
 
 /* ======= Кнопка “Читать статью” ======= */
@@ -71,7 +71,7 @@ hr {
 }
 
 .read-more a {
-  background-color: #007bff;
+  background-color: #0047ab;
   color: #fff;
   padding: 10px 25px;
   border-radius: 8px;
@@ -81,7 +81,7 @@ hr {
 }
 
 .read-more a:hover {
-  background-color: #339cff;
+  background-color: #336dcc;
 }
 
 /* ======= Контакты ======= */
@@ -91,14 +91,14 @@ hr {
 }
 
 .contacts a {
-  color: #66aaff;
+  color: #0047ab;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s;
 }
 
 .contacts a:hover {
-  color: #339cff;
+  color: #336dcc;
 }
 
 /* ======= Подвал ======= */
@@ -107,7 +107,7 @@ footer {
   color: #777;
   font-size: 0.9em;
   margin-top: 60px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #ddd;
   padding-top: 20px;
 }
 
