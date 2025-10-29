@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergei Olevskii — Global Payments, Emerging Markets & Strategic Development</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <meta name="description" content="Sergei Olevskii — practitioner in global payments, emerging markets, and strategic development.">
+  <meta property="og:title" content="Sergei Olevskii — Global Payments and Strategic Development">
+  <meta property="og:description" content="Practitioner with over 15 years of experience in cross-border finance, Africa, and technology.">
+  <meta property="og:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
+  <meta property="og:url" content="https://sergeyolevsky.github.io/en.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6; color: #222; background-color: #fafafa; scroll-behavior: smooth; }
+    .container { max-width: 820px; margin: 0 auto; padding: 20px; }
+    .name-title { text-align: center; font-size: 2.2em; margin-top: 10px; margin-bottom: 8px;
+      transition: text-shadow 0.4s, color 0.3s; }
+    .name-title:hover { text-shadow: 0 0 15px rgba(0,90,255,0.4); color: #002f7f; }
+    .subtitle { text-align: center; color: #555; margin-bottom: 15px; }
+    .lang-switch { text-align: center; margin-bottom: 10px; }
+    .lang-switch a { color: #004aad; text-decoration: none; font-size: 0.95em; }
+    .lang-switch a:hover { text-decoration: underline; }
+    .portrait { text-align: center; margin: 20px 0; }
+    .portrait img { width: 220px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.3s; }
+    .portrait img:hover { transform: scale(1.03); }
+    .contacts { text-align: center; margin-top: 40px; }
+    .contacts a { color: #004aad; text-decoration: none; }
+    .contacts a:hover { color: #002f7f; text-shadow: 0 0 6px rgba(0,90,255,0.25); }
+    footer { text-align: center; font-size: 0.85em; color: #777; margin-top: 40px; }
+    @media (prefers-color-scheme: dark) { body { background-color: #111; color: #ddd; }
+      .contacts a { color: #6ea8ff; } footer { color: #888; } }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="index.html" id="langToggle">Русская версия</a>
+    </div>
+
+    <h1 class="name-title">Sergei Olevskii</h1>
+    <p class="subtitle">Practitioner in Global Payments, Emerging Markets, and Strategic Development</p>
+
+    <div class="portrait">
+      <img src="sergei_caricature.png" alt="Sergei Olevskii caricature">
+    </div>
+
+    <p>Sergei Olevskii is a practitioner in international payments and cross-border finance with over 15 years of experience. He has worked with <b>Transfast</b> (later acquired by <b>Mastercard</b>) and advised <b>Earthport</b>, focusing on payment infrastructure and compliance in emerging markets.</p>
+
+    <p>Educated in the United States and Canada, and a participant in programs at the <b>Oxford Saïd Business School</b>, he has been involved in creating and developing projects across the CIS, the Middle East, and Africa — including the development of a <b>columbite (Nb-Ta) mining project in Nigeria</b>.</p>
+
+    <p>Today, Sergei works at the intersection of finance, technology, and geo-economics, exploring new approaches to international settlements and global development strategies.</p>
+
+    <div class="contacts">
+      <p><b>Contacts:</b></p>
+      <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+      <a href="mailto:sergei.olevskii@icloud.com">Email</a> |
+      <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
+    </div>
+
+    <footer>© 2025 Sergei Olevskii</footer>
+  </div>
+
+  <script>
+    // Переключатель языка
+    const langToggle = document.getElementById("langToggle");
+    const isEnglish = window.location.pathname.includes("en.html");
+    langToggle.textContent = isEnglish ? "Русская версия" : "English version";
+    langToggle.href = isEnglish ? "index.html" : "en.html";
+  </script>
+</body>
+</html>
