@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sergei Olevskii — Global Payments, Emerging Markets & Strategic Development</title>
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
 
+  <!-- Meta for SEO / social -->
   <meta name="description" content="Sergei Olevskii — practitioner in global payments, emerging markets, and strategic development.">
   <meta property="og:title" content="Sergei Olevskii — Global Payments and Strategic Development">
   <meta property="og:description" content="Practitioner with over 15 years of experience in cross-border finance, Africa, and technology.">
@@ -14,47 +17,384 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
-    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6; color: #222; background-color: #fafafa; scroll-behavior: smooth; }
-    .container { max-width: 820px; margin: 0 auto; padding: 20px; }
-    .name-title { text-align: center; font-size: 2.2em; margin-top: 10px; margin-bottom: 8px;
-      transition: text-shadow 0.4s, color 0.3s; }
-    .name-title:hover { text-shadow: 0 0 15px rgba(0,90,255,0.4); color: #002f7f; }
-    .subtitle { text-align: center; color: #555; margin-bottom: 15px; }
-    .lang-switch { text-align: center; margin-bottom: 10px; }
-    .lang-switch a { color: #004aad; text-decoration: none; font-size: 0.95em; }
-    .lang-switch a:hover { text-decoration: underline; }
-    .portrait { text-align: center; margin: 20px 0; }
-    .portrait img { width: 220px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.3s; }
-    .portrait img:hover { transform: scale(1.03); }
-    .contacts { text-align: center; margin-top: 40px; }
-    .contacts a { color: #004aad; text-decoration: none; }
-    .contacts a:hover { color: #002f7f; text-shadow: 0 0 6px rgba(0,90,255,0.25); }
-    footer { text-align: center; font-size: 0.85em; color: #777; margin-top: 40px; }
-    @media (prefers-color-scheme: dark) { body { background-color: #111; color: #ddd; }
-      .contacts a { color: #6ea8ff; } footer { color: #888; } }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fafafa;
+      transition: background-color 0.4s, color 0.4s;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 20px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Language switcher */
+    .lang-switch {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .lang-switch a {
+      color: #004aad;
+      text-decoration: none;
+      font-size: 0.95em;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .lang-switch a:hover {
+      color: #002f7f;
+      text-shadow: 0 0 6px rgba(0,90,255,0.25);
+    }
+
+    /* Name */
+    .name-title {
+      text-align: center;
+      font-size: 2.2em;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      transition: text-shadow 0.4s, color 0.3s;
+      cursor: default;
+    }
+
+    .name-title:hover {
+      text-shadow: 0 0 15px rgba(0, 90, 255, 0.4);
+      color: #002f7f;
+    }
+
+    /* Subtitle */
+    .subtitle {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    /* Portrait */
+    .portrait {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+
+    .portrait img {
+      width: 220px;
+      max-width: 70%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .portrait img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Body text */
+    p {
+      text-align: justify;
+      margin-bottom: 16px;
+    }
+
+    /* Articles block */
+    .articles {
+      margin-top: 30px;
+    }
+
+    .article {
+      margin-bottom: 35px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .article h2 {
+      margin-bottom: 6px;
+    }
+
+    .article h2 a {
+      color: #004aad;
+      text-decoration: none;
+      border-bottom: 2px solid #aac4ff;
+      transition: color 0.3s, border-color 0.3s, text-shadow 0.3s;
+    }
+
+    .article h2 a:hover {
+      color: #002f7f;
+      border-color: #004aad;
+      text-shadow: 0 0 8px rgba(0, 90, 255, 0.3);
+    }
+
+    .date {
+      color: #777;
+      font-size: 0.9em;
+      margin-top: -5px;
+      margin-bottom: 10px;
+    }
+
+    /* About block */
+    .about {
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #444;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+      text-align: justify;
+    }
+
+    /* Contacts */
+    .contacts {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contacts a {
+      color: #004aad;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .contacts a:hover {
+      color: #002f7f;
+      text-shadow: 0 0 6px rgba(0, 90, 255, 0.25);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    /* Back to top button */
+    #toTop {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #004aad;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    #toTop:hover {
+      background: #002f7f;
+      transform: translateY(-3px);
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      .name-title {
+        font-size: 1.8em;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+        text-align: left;
+      }
+
+      .article h2 {
+        font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .name-title {
+        font-size: 1.5em;
+      }
+
+      .subtitle {
+        font-size: 0.95em;
+      }
+
+      .portrait img {
+        width: 180px;
+      }
+
+      p {
+        font-size: 0.95em;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111;
+        color: #ddd;
+      }
+
+      .subtitle {
+        color: #aaa;
+      }
+
+      .article h2 a {
+        color: #6ea8ff;
+        border-color: #3b4d7a;
+      }
+
+      .article h2 a:hover {
+        color: #9cc6ff;
+        border-color: #6ea8ff;
+        text-shadow: 0 0 10px rgba(160, 200, 255, 0.45);
+      }
+
+      .date {
+        color: #999;
+      }
+
+      .about {
+        color: #aaa;
+        border-top-color: #333;
+      }
+
+      .contacts a {
+        color: #6ea8ff;
+      }
+
+      footer {
+        color: #888;
+      }
+
+      #toTop {
+        background: #6ea8ff;
+        color: #111;
+      }
+
+      #toTop:hover {
+        background: #9cc6ff;
+      }
+
+      .portrait img {
+        box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <!-- Language switcher -->
     <div class="lang-switch">
       <a href="index.html" id="langToggle">Русская версия</a>
     </div>
 
+    <!-- Header -->
     <h1 class="name-title">Sergei Olevskii</h1>
     <p class="subtitle">Practitioner in Global Payments, Emerging Markets, and Strategic Development</p>
 
+    <!-- Portrait -->
     <div class="portrait">
       <img src="sergei_caricature.png" alt="Sergei Olevskii caricature">
     </div>
 
-    <p>Sergei Olevskii is a practitioner in international payments and cross-border finance with over 15 years of experience. He has worked with <b>Transfast</b> (later acquired by <b>Mastercard</b>) and advised <b>Earthport</b>, focusing on payment infrastructure and compliance in emerging markets.</p>
+    <!-- Bio -->
+    <p>
+      Sergei Olevskii is a practitioner in international payments and cross-border finance with over 15 years of experience.
+      He has worked with <b>Transfast</b> (later acquired by <b>Mastercard</b>) and advised <b>Earthport</b>, focusing on payment infrastructure
+      and compliance in emerging markets.
+    </p>
 
-    <p>Educated in the United States and Canada, and a participant in programs at the <b>Oxford Saïd Business School</b>, he has been involved in creating and developing projects across the CIS, the Middle East, and Africa — including the development of a <b>columbite (Nb-Ta) mining project in Nigeria</b>.</p>
+    <p>
+      Educated in the United States and Canada, and a participant in programs at the <b>Oxford Saïd Business School</b>,
+      he has been involved in creating and developing projects across the CIS, the Middle East, and Africa — including
+      the development of a <b>columbite (Nb-Ta) mining project in Nigeria</b>.
+    </p>
 
-    <p>Today, Sergei works at the intersection of finance, technology, and geo-economics, exploring new approaches to international settlements and global development strategies.</p>
+    <p>
+      Today, Sergei works at the intersection of finance, technology, and geo-economics, exploring new approaches
+      to international settlements and global development strategies.
+    </p>
 
+    <!-- Articles -->
+    <div class="articles">
+
+      <div class="article">
+        <h2><a href="swift.html">Payment Systems</a></h2>
+        <p class="date">May 2025</p>
+        <p>
+          A closer look at SWIFT — not a money transfer system, but a global banking messenger — and why cutting off access to SWIFT
+          is more symbolic than fatal. In practice, it often means switching to a different communications channel.
+        </p>
+      </div>
+
+      <div class="article">
+        <h2><a href="sanctions.html">Sanctions and Financial Restrictions</a></h2>
+        <p class="date">October 2025</p>
+        <p>
+          Sanctions have become part of global economic reality. What used to be an exceptional tool is now a constant instrument
+          of international policy. But frequent use does not automatically make them effective.
+        </p>
+      </div>
+
+      <div class="article">
+        <h2><a href="miscoding.html">International Payments and Miscoding</a></h2>
+        <p class="date">July 2025</p>
+        <p>
+          In the era of sanctions and digital monitoring, cross-border payments are becoming less transparent.
+          “Miscoding” — intentionally assigning the “wrong” transaction category — is increasingly used to disguise
+          the real economic nature of a payment behind something that looks compliant.
+        </p>
+      </div>
+
+      <div class="article">
+        <h2><a href="africa.html">Working in Africa</a></h2>
+        <p class="date">October 2025</p>
+        <p>
+          Africa is not just “a continent of opportunities.” It is a continent of power structures and traditions.
+          Doing business in Nigeria means understanding traditional authority, tribal dynamics, and negotiation culture.
+          Without that, no project will last.
+        </p>
+      </div>
+
+      <div class="article">
+        <h2><a href="ai_luddites.html">Neo-Luddites of the 21st Century: Why the Fear of AI Is the Same Old Story</a></h2>
+        <p class="date">October 2025</p>
+        <p>
+          History repeats: people once smashed looms, now they want to “pause AI.”
+          The fear of technology is rarely about the technology itself — it’s about losing control.
+          Progress doesn’t ask for permission.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- About -->
+    <div class="about">
+      <p><b>About this site:</b> This website serves as a personal platform for publishing analytical materials and reflections
+      on international finance, Africa, geo-economics, and technology. All views expressed are those of the author.</p>
+    </div>
+
+    <!-- Contacts -->
     <div class="contacts">
       <p><b>Contacts:</b></p>
       <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
@@ -62,11 +402,24 @@
       <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
     </div>
 
-    <footer>© 2025 Sergei Olevskii</footer>
+    <!-- Footer -->
+    <footer>
+      © 2025 Sergei Olevskii
+    </footer>
   </div>
 
+  <!-- Back to top button -->
+  <button id="toTop" title="Back to top">↑</button>
+
   <script>
-    // Переключатель языка
+    // Show "back to top" button on scroll
+    const toTop = document.getElementById("toTop");
+    window.addEventListener("scroll", () => {
+      toTop.style.display = window.scrollY > 400 ? "block" : "none";
+    });
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // Language toggle text
     const langToggle = document.getElementById("langToggle");
     const isEnglish = window.location.pathname.includes("en.html");
     langToggle.textContent = isEnglish ? "Русская версия" : "English version";
