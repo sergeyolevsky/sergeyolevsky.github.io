@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neo-Luddites of the 21st Century — Sergei Olevskii</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <meta name="description" content="Calls to stop AI sound new, but the mentality is old. People have always tried to slow down the machines that scared them.">
+  <meta property="og:title" content="Neo-Luddites of the 21st Century — Sergei Olevskii">
+  <meta property="og:description" content="From broken looms to ‘pause AI’: every era has tried to freeze the future. It never works.">
+  <meta property="og:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
+  <meta property="og:url" content="https://sergeyolevsky.github.io/ai_luddites_en.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fafafa;
+      transition: background-color 0.4s, color 0.4s;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .lang-switch {
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+
+    .lang-switch a {
+      color: #004aad;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .lang-switch a:hover {
+      color: #002f7f;
+      text-shadow: 0 0 6px rgba(0,90,255,0.25);
+    }
+
+    .name-title {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 5px 0 2px 0;
+      transition: text-shadow 0.4s, color 0.3s;
+      cursor: pointer;
+    }
+
+    .name-title:hover {
+      text-shadow: 0 0 12px rgba(0, 90, 255, 0.4);
+      color: #002f7f;
+    }
+
+    .subtitle {
+      font-size: 0.9em;
+      color: #555;
+      margin: 0;
+    }
+
+    .portrait {
+      text-align: center;
+      margin: 20px 0 30px 0;
+    }
+
+    .portrait img {
+      width: 160px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .portrait img:hover {
+      transform: scale(1.03);
+    }
+
+    .article-header {
+      margin-bottom: 20px;
+    }
+
+    .article-title {
+      font-size: 1.6em;
+      font-weight: 600;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    article p {
+      text-align: justify;
+      margin-bottom: 16px;
+      font-size: 1em;
+      line-height: 1.55;
+    }
+
+    .back-links {
+      margin-top: 30px;
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    .back-links a {
+      color: #004aad;
+      text-decoration: none;
+      margin: 0 6px;
+      border-bottom: 1px solid #aac4ff;
+      transition: color 0.3s, text-shadow 0.3s, border-color 0.3s;
+    }
+
+    .back-links a:hover {
+      color: #002f7f;
+      border-color: #004aad;
+      text-shadow: 0 0 6px rgba(0,90,255,0.25);
+    }
+
+    .contacts {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    .contacts a {
+      color: #004aad;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .contacts a:hover {
+      color: #002f7f;
+      text-shadow: 0 0 6px rgba(0, 90, 255, 0.25);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      .article-title {
+        font-size: 1.4em;
+      }
+
+      article p {
+        font-size: 0.95em;
+        text-align: left;
+      }
+
+      .portrait img {
+        width: 140px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111;
+        color: #ddd;
+      }
+
+      .subtitle {
+        color: #aaa;
+      }
+
+      .date {
+        color: #999;
+      }
+
+      .back-links a,
+      .contacts a {
+        color: #6ea8ff;
+        border-color: #3b4d7a;
+      }
+
+      .back-links a:hover,
+      .contacts a:hover {
+        color: #9cc6ff;
+        border-color: #6ea8ff;
+        text-shadow: 0 0 10px rgba(160,200,255,0.45);
+      }
+
+      footer {
+        color: #888;
+      }
+
+      .portrait img {
+        box-shadow: 0 4px 14px rgba(255,255,255,0.1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="lang-switch">
+        <a href="ai_luddites.html">Русская версия статьи</a> ·
+        <a href="en.html">Back to main page</a>
+      </div>
+
+      <div class="name-title" onclick="window.location.href='en.html'">
+        Sergei Olevskii
+      </div>
+      <p class="subtitle">
+        Practitioner in Global Payments, Emerging Markets, and Strategic Development
+      </p>
+
+      <div class="portrait">
+        <img src="sergei_caricature.png" alt="Sergei Olevskii caricature">
+      </div>
+    </header>
+
+    <section class="article-header">
+      <div class="article-title">Neo-Luddites of the 21st Century: Why the Fear of AI Is the Same Old Story</div>
+      <div class="date">October 2025</div>
+    </section>
+
+    <article>
+      <p>
+        Every technological leap creates two reactions at once: excitement and panic.
+        The excitement tends to be quiet and focused — engineers, operators, founders.
+        The panic is always loud and public. It demands a pause, a ban, a regulation, a moratorium.
+        “We must stop this before it’s too late.”
+      </p>
+
+      <p>
+        We’ve seen this before. In the early 19th century, English textile workers smashed industrial looms.
+        They weren’t just angry at machines; they were angry at the shift in power.
+        The machine wasn’t only making production faster, it was changing who controlled production.
+      </p>
+
+      <p>
+        Today’s anti-AI rhetoric is the same song in a new arrangement.
+        The request is framed as responsibility — “slow down AI for humanity” —
+        but the subtext is the same as it was with the looms:
+        “I am losing control over a system that used to depend on me.”
+      </p>
+
+      <p>
+        There is also a moral framing that repeats across centuries.
+        The machine isn’t described as a tool. It’s described as a threat to order, dignity, identity.
+        “It will replace us. It will erase what makes us human.”
+        The irony is that every breakthrough in automation
+        (from textile mechanization to ATMs to machine learning)
+        initially sounds like the end of skilled work — and then, after the panic,
+        it quietly becomes infrastructure.
+      </p>
+
+      <p>
+        Calls to “pause” AI often come from people and institutions who feel
+        that the next phase will not be governed by their rules.
+        The fear isn’t that AI will accelerate. The fear is that it will accelerate
+        without them sitting in the control room.
+      </p>
+
+      <p>
+        Progress does not ask for permission.
+        That line sounds cynical, but it’s actually descriptive.
+        You can slow adoption in some jurisdictions. You can regulate.
+        You can redirect who profits. You can criminalize certain uses.
+        But you cannot uninvent capacity.
+      </p>
+
+      <p>
+        And once the capacity exists — to generate text, to generate images,
+        to generate code, to generate strategy — it spreads.
+        Whether or not someone in Washington, Brussels, or Davos is “comfortable.”
+      </p>
+
+      <p>
+        So yes, the fear around AI is understandable.
+        It’s also familiar. We’ve seen it with industrial weaving machines,
+        with electricity, with chemical fertilizers, with telecommunications,
+        with cryptography, with the commercial internet.
+      </p>
+
+      <p>
+        “Stop the future” is always marketed as ethics.
+        It’s usually about power.
+      </p>
+    </article>
+
+    <div class="back-links">
+      <a href="en.html">← Back to main page</a>
+      <a href="ai_luddites.html">Русская версия статьи</a>
+    </div>
+
+    <div class="contacts">
+      <p><b>Contacts:</b><br>
+        <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+        <a href="mailto:sergei.olevskii@icloud.com">Email</a> |
+        <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <footer>
+      © 2025 Sergei Olevskii
+    </footer>
+  </div>
+</body>
+</html>
