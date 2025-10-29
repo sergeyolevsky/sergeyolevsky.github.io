@@ -6,6 +6,36 @@
   <title>Сергей Олевский — международные финансы и Африка</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fafafa;
+      transition: background-color 0.4s, color 0.4s;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .name-title {
+      text-align: center;
+      font-size: 2.2em;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
     .portrait {
       text-align: center;
       margin-top: 20px;
@@ -13,9 +43,150 @@
     }
 
     .portrait img {
-      max-width: 220px;
+      width: 220px;
+      max-width: 70%;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      height: auto;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 16px;
+    }
+
+    .articles {
+      margin-top: 30px;
+    }
+
+    .article {
+      margin-bottom: 35px;
+    }
+
+    .article h2 a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 2px solid #ccc;
+      transition: border-color 0.3s, color 0.3s;
+    }
+
+    .article h2 a:hover {
+      border-color: #000;
+      color: #111;
+    }
+
+    .date {
+      color: #777;
+      font-size: 0.9em;
+      margin-top: -5px;
+      margin-bottom: 10px;
+    }
+
+    .contacts {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contacts a {
+      color: #004aad;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    /* 📱 Мобильная адаптация */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      .name-title {
+        font-size: 1.8em;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+        text-align: left;
+      }
+
+      .article h2 {
+        font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .name-title {
+        font-size: 1.5em;
+      }
+
+      .subtitle {
+        font-size: 0.95em;
+      }
+
+      .portrait img {
+        width: 180px;
+      }
+
+      p {
+        font-size: 0.95em;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
+
+    /* 🌙 Тёмная тема */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111;
+        color: #ddd;
+      }
+
+      .subtitle {
+        color: #aaa;
+      }
+
+      .article h2 a {
+        color: #ddd;
+        border-color: #444;
+      }
+
+      .article h2 a:hover {
+        color: #fff;
+        border-color: #888;
+      }
+
+      .date {
+        color: #999;
+      }
+
+      .contacts a {
+        color: #6ea8ff;
+      }
+
+      footer {
+        color: #888;
+      }
+
+      .portrait img {
+        box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
+      }
     }
   </style>
 </head>
