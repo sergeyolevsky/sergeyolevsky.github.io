@@ -4,17 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sergei Olevskii — Global Payments, Emerging Markets & Strategic Development</title>
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
-
-  <!-- Meta for SEO / social -->
-  <meta name="description" content="Sergei Olevskii — practitioner in global payments, emerging markets, and strategic development.">
-  <meta property="og:title" content="Sergei Olevskii — Global Payments and Strategic Development">
-  <meta property="og:description" content="Practitioner with over 15 years of experience in cross-border finance, Africa, and technology.">
-  <meta property="og:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
-  <meta property="og:url" content="https://sergeyolevsky.github.io/en.html">
-  <meta name="twitter:card" content="summary_large_image">
 
   <style>
     body {
@@ -43,29 +33,29 @@
     /* Language switcher */
     .lang-switch {
       text-align: center;
-      margin-bottom: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      user-select: none;
     }
 
     .lang-switch a {
-      color: #004aad;
       text-decoration: none;
-      font-size: 0.95em;
-      transition: color 0.3s, text-shadow 0.3s;
+      font-size: 1.4em;
+      transition: transform 0.2s, filter 0.3s;
     }
 
     .lang-switch a:hover {
-      color: #002f7f;
-      text-shadow: 0 0 6px rgba(0,90,255,0.25);
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 6px rgba(0, 90, 255, 0.4));
     }
 
-    /* Name */
     .name-title {
       text-align: center;
       font-size: 2.2em;
       margin-top: 10px;
       margin-bottom: 8px;
       transition: text-shadow 0.4s, color 0.3s;
-      cursor: default;
     }
 
     .name-title:hover {
@@ -73,7 +63,6 @@
       color: #002f7f;
     }
 
-    /* Subtitle */
     .subtitle {
       text-align: center;
       font-size: 1.1em;
@@ -81,11 +70,9 @@
       margin-bottom: 15px;
     }
 
-    /* Portrait */
     .portrait {
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 25px;
+      margin: 20px 0 25px 0;
     }
 
     .portrait img {
@@ -101,24 +88,17 @@
       transform: scale(1.03);
     }
 
-    /* Body text */
     p {
       text-align: justify;
       margin-bottom: 16px;
     }
 
-    /* Articles block */
     .articles {
       margin-top: 30px;
     }
 
     .article {
       margin-bottom: 35px;
-      animation: fadeIn 1.2s ease-out;
-    }
-
-    .article h2 {
-      margin-bottom: 6px;
     }
 
     .article h2 a {
@@ -141,17 +121,6 @@
       margin-bottom: 10px;
     }
 
-    /* About block */
-    .about {
-      margin-top: 40px;
-      font-size: 0.95em;
-      color: #444;
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-      text-align: justify;
-    }
-
-    /* Contacts */
     .contacts {
       text-align: center;
       margin-top: 40px;
@@ -168,7 +137,6 @@
       text-shadow: 0 0 6px rgba(0, 90, 255, 0.25);
     }
 
-    /* Footer */
     footer {
       text-align: center;
       font-size: 0.85em;
@@ -200,124 +168,39 @@
       transform: translateY(-3px);
     }
 
-    /* Mobile tweaks */
-    @media (max-width: 768px) {
-      .container {
-        padding: 15px;
-      }
-
-      .name-title {
-        font-size: 1.8em;
-      }
-
-      .subtitle {
-        font-size: 1em;
-      }
-
-      p {
-        font-size: 1em;
-        text-align: left;
-      }
-
-      .article h2 {
-        font-size: 1.2em;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .name-title {
-        font-size: 1.5em;
-      }
-
-      .subtitle {
-        font-size: 0.95em;
-      }
-
-      .portrait img {
-        width: 180px;
-      }
-
-      p {
-        font-size: 0.95em;
-      }
-
-      footer {
-        font-size: 0.8em;
-      }
-    }
-
     /* Dark mode */
     @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #111;
-        color: #ddd;
-      }
-
-      .subtitle {
-        color: #aaa;
-      }
-
-      .article h2 a {
-        color: #6ea8ff;
-        border-color: #3b4d7a;
-      }
-
-      .article h2 a:hover {
-        color: #9cc6ff;
-        border-color: #6ea8ff;
-        text-shadow: 0 0 10px rgba(160, 200, 255, 0.45);
-      }
-
-      .date {
-        color: #999;
-      }
-
-      .about {
-        color: #aaa;
-        border-top-color: #333;
-      }
-
-      .contacts a {
-        color: #6ea8ff;
-      }
-
-      footer {
-        color: #888;
-      }
-
-      #toTop {
-        background: #6ea8ff;
-        color: #111;
-      }
-
-      #toTop:hover {
-        background: #9cc6ff;
-      }
-
-      .portrait img {
-        box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
-      }
+      body { background-color: #111; color: #ddd; }
+      .subtitle { color: #aaa; }
+      .date { color: #999; }
+      .article h2 a { color: #6ea8ff; border-color: #3b4d7a; }
+      .article h2 a:hover { color: #9cc6ff; border-color: #6ea8ff; text-shadow: 0 0 10px rgba(160,200,255,0.45); }
+      .contacts a { color: #6ea8ff; }
+      footer { color: #888; }
+      #toTop { background: #6ea8ff; color: #111; }
+      #toTop:hover { background: #9cc6ff; }
+      .portrait img { box-shadow: 0 4px 14px rgba(255,255,255,0.1); }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <!-- Language switcher -->
+
+    <!-- Flags -->
     <div class="lang-switch">
-      <a href="index.html" id="langToggle">Русская версия</a>
+      <a href="index.html" title="Русская версия">🇷🇺</a>
+      &nbsp;|&nbsp;
+      <a href="en.html" title="English version">🇬🇧</a>
     </div>
 
-    <!-- Header -->
     <h1 class="name-title">Sergei Olevskii</h1>
     <p class="subtitle">Practitioner in Global Payments, Emerging Markets, and Strategic Development</p>
 
-    <!-- Portrait -->
     <div class="portrait">
       <img src="sergei_caricature.png" alt="Sergei Olevskii caricature">
     </div>
 
-    <!-- Bio -->
     <p>
       Sergei Olevskii is a practitioner in international payments and cross-border finance with over 15 years of experience.
       He has worked with <b>Transfast</b> (later acquired by <b>Mastercard</b>) and advised <b>Earthport</b>, focusing on payment infrastructure
@@ -335,7 +218,6 @@
       to international settlements and global development strategies.
     </p>
 
-    <!-- Articles -->
     <div class="articles">
 
       <div class="article">
@@ -388,13 +270,6 @@
 
     </div>
 
-    <!-- About -->
-    <div class="about">
-      <p><b>About this site:</b> This website serves as a personal platform for publishing analytical materials and reflections
-      on international finance, Africa, geo-economics, and technology. All views expressed are those of the author.</p>
-    </div>
-
-    <!-- Contacts -->
     <div class="contacts">
       <p><b>Contacts:</b></p>
       <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
@@ -402,17 +277,12 @@
       <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      © 2025 Sergei Olevskii
-    </footer>
+    <footer>© 2025 Sergei Olevskii</footer>
   </div>
 
-  <!-- Back to top button -->
   <button id="toTop" title="Back to top">↑</button>
 
   <script>
-    // Show "back to top" button on scroll
     const toTop = document.getElementById("toTop");
     window.addEventListener("scroll", () => {
       toTop.style.display = window.scrollY > 400 ? "block" : "none";
