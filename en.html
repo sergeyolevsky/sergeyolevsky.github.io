@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sergei Olevskii — Global Payments, Emerging Markets & Strategic Development</title>
-
   <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="Sergei Olevskii — practitioner in global payments, emerging markets, and strategic development. Experienced in cross-border finance, Africa, and payment systems.">
-  <meta name="keywords" content="Sergei Olevskii, global payments, cross-border finance, emerging markets, Africa, Nigeria, columbite, mining, fintech, compliance, SWIFT, sanctions, miscoding, Oxford Saïd Business School, Transfast, Earthport, cross-border settlements, Africa business, Lakefield College, Russian payment systems, Central Bank of Russia, 161-FZ">
+  <meta name="description" content="Sergei Olevskii — practitioner in global payments, cross-border settlements and strategic development. Experienced in Russia, Africa, and global markets.">
+  <meta name="keywords" content="Sergei Olevskii, global payments, cross-border finance, emerging markets, Africa, Nigeria, columbite, fintech, Transfast, Earthport, Oxford Saïd Business School, Central Bank of Russia, 161-FZ, payment systems, sanctions, miscoding, Africa business">
   <meta name="author" content="Sergei Olevskii">
 
-  <!-- ✅ Open Graph / Facebook -->
-  <meta property="og:title" content="Sergei Olevskii — Global Payments and Strategic Development">
-  <meta property="og:description" content="Practitioner with over 15 years of experience in cross-border payments, fintech, and emerging markets. Worked with Transfast (Mastercard) and advised Earthport.">
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Sergei Olevskii — Global Payments, Emerging Markets & Strategic Development">
+  <meta property="og:description" content="Expert with over 15 years of experience in cross-border payments, fintech, and emerging markets. Worked with Transfast (Mastercard) and advised Earthport.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sergeyolevsky.github.io/en.html">
   <meta property="og:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
@@ -22,10 +21,10 @@
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sergei Olevskii — Global Payments, Emerging Markets & Strategic Development">
-  <meta name="twitter:description" content="Practitioner in global payments and cross-border finance with experience across Africa and emerging markets.">
+  <meta name="twitter:description" content="Practitioner in international payments, Africa, and emerging markets. Over 15 years of global experience.">
   <meta name="twitter:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
 
-  <!-- ✅ Structured Data (JSON-LD) -->
+  <!-- ✅ Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,17 +32,11 @@
     "name": "Sergei Olevskii",
     "url": "https://sergeyolevsky.github.io/en.html",
     "image": "https://sergeyolevsky.github.io/sergei_caricature.png",
-    "jobTitle": "Practitioner in global payments and strategic development",
-    "description": "Sergei Olevskii is a practitioner in global payments and emerging markets, with over 15 years of experience in cross-border finance, Africa, and fintech development.",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Mining Technologies Co. Ltd"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Oxford Saïd Business School"
-    },
-    "knowsAbout": ["global payments", "Africa", "cross-border finance", "fintech", "geo-economics"],
+    "jobTitle": "Practitioner in global payments and cross-border finance",
+    "description": "Sergei Olevskii — practitioner in global payments, emerging markets, and strategic development with over 15 years of experience in Russia, Africa, and global fintech.",
+    "worksFor": { "@type": "Organization", "name": "Mining Technologies Co. Ltd" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Oxford Saïd Business School" },
+    "knowsAbout": ["global payments", "Africa", "cross-border finance", "geo-economics", "fintech"],
     "sameAs": [
       "https://t.me/solevsky",
       "https://www.linkedin.com/in/sergei-olevskii-b6154015"
@@ -59,7 +52,6 @@
       line-height: 1.6;
       color: #222;
       background-color: #fafafa;
-      transition: background-color 0.4s, color 0.4s;
       scroll-behavior: smooth;
     }
 
@@ -67,22 +59,18 @@
       max-width: 820px;
       margin: 0 auto;
       padding: 20px;
-      animation: fadeIn 1s ease-out;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
+    /* 🌍 Language Switcher */
     .lang-switch {
       text-align: center;
       margin-bottom: 15px;
-      font-size: 1.4em;
+      font-size: 1.6em;
       user-select: none;
     }
 
     .lang-switch a {
+      display: inline-block;
       text-decoration: none;
       transition: transform 0.2s, filter 0.3s, opacity 0.3s;
     }
@@ -93,10 +81,11 @@
     }
 
     .lang-switch a.active {
-      opacity: 0.6;
+      opacity: 0.4;
       pointer-events: none;
       cursor: default;
-      filter: grayscale(40%);
+      filter: grayscale(100%) brightness(70%);
+      transform: scale(1);
     }
 
     .name-title {
@@ -121,10 +110,8 @@
 
     .portrait img {
       width: 220px;
-      max-width: 70%;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      height: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: transform 0.3s;
     }
 
@@ -133,23 +120,21 @@
     p { text-align: justify; margin-bottom: 16px; }
 
     .articles { margin-top: 30px; }
-
     .article { margin-bottom: 35px; }
 
     .article h2 a {
       color: #004aad;
       text-decoration: none;
       border-bottom: 2px solid #aac4ff;
-      transition: color 0.3s, border-color 0.3s, text-shadow 0.3s;
+      transition: color 0.3s, border-color 0.3s;
     }
 
     .article h2 a:hover {
       color: #002f7f;
       border-color: #004aad;
-      text-shadow: 0 0 8px rgba(0, 90, 255, 0.3);
     }
 
-    .date { color: #777; font-size: 0.9em; margin-top: -5px; margin-bottom: 10px; }
+    .date { color: #777; font-size: 0.9em; margin-bottom: 10px; }
 
     .about {
       margin-top: 40px;
@@ -157,7 +142,6 @@
       color: #444;
       border-top: 1px solid #ddd;
       padding-top: 20px;
-      text-align: justify;
     }
 
     .contacts { text-align: center; margin-top: 40px; }
@@ -165,32 +149,11 @@
     .contacts a {
       color: #004aad;
       text-decoration: none;
-      transition: color 0.3s, text-shadow 0.3s;
     }
 
-    .contacts a:hover {
-      color: #002f7f;
-      text-shadow: 0 0 6px rgba(0, 90, 255, 0.25);
-    }
+    .contacts a:hover { color: #002f7f; }
 
-    footer {
-      text-align: center;
-      font-size: 0.85em;
-      color: #777;
-      margin-top: 40px;
-      padding-bottom: 20px;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body { background-color: #111; color: #ddd; }
-      .subtitle { color: #aaa; }
-      .article h2 a { color: #6ea8ff; border-color: #3b4d7a; }
-      .article h2 a:hover { color: #9cc6ff; border-color: #6ea8ff; }
-      .date { color: #999; }
-      .about { color: #aaa; border-top-color: #333; }
-      .contacts a { color: #6ea8ff; }
-      footer { color: #888; }
-    }
+    footer { text-align: center; font-size: 0.85em; color: #777; margin-top: 40px; }
   </style>
 </head>
 
@@ -198,7 +161,7 @@
   <div class="container">
     <div class="lang-switch">
       <a href="index.html" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
-      <a href="en.html" title="English version" class="active">🇬🇧</a>
+      <a href="en.html" class="active" title="English version">🇬🇧</a>
     </div>
 
     <h1 class="name-title">Sergei Olevskii</h1>
@@ -212,83 +175,60 @@
       Born in Moscow, Sergei played hockey for the junior team of <b>Moscow Spartak</b>,
       and later for the student team of <b>Lakefield College School</b> (Canada),
       as well as the town team of <b>Lakefield, Ontario</b>.
-      He worked with various <b>Russian payment systems and companies</b>,
-      and participated in an expert group that assisted the <b>Central Bank of Russia</b>
-      in drafting the national <b>Payment Systems Act (Federal Law 161-FZ)</b>.
     </p>
-
     <p>
-      Sergei Olevskii is a practitioner in international payments and cross-border finance with over 15 years of experience.
-      He has worked with <b>Transfast</b> (later acquired by <b>Mastercard</b>) and advised <b>Earthport</b>,
-      focusing on payment infrastructure and compliance in emerging markets.
+      He worked with several <b>Russian payment systems and companies</b> and was part of an expert group assisting the
+      <b>Central Bank of Russia</b> in drafting the national <b>Payment Systems Act (Federal Law 161-FZ)</b>.
     </p>
-
+    <p>
+      Sergei has more than 15 years of experience in international payments and cross-border finance.
+      He worked with <b>Transfast</b> (later acquired by <b>Mastercard</b>) and advised <b>Earthport</b>,
+      focusing on payment infrastructure, compliance, and global settlements.
+    </p>
     <p>
       Educated in the United States and Canada, and a participant in programs at the <b>Oxford Saïd Business School</b>,
-      he has been involved in creating and developing projects across the CIS, the Middle East, and Africa —
-      including the development of a <b>columbite (Nb-Ta)</b> mining project in Nigeria.
+      he has been involved in developing projects across the CIS, the Middle East, and Africa —
+      including the establishment of a <b>columbite (Nb-Ta)</b> mining project in Nigeria.
     </p>
-
     <p>
-      Today, Sergei works at the intersection of finance, technology, and geo-economics,
+      Today, Sergei works at the intersection of technology, payments, and geo-economics,
       exploring new approaches to international settlements and global development strategies.
     </p>
 
     <div class="articles">
-
       <div class="article">
         <h2><a href="swift_en.html">Payment Systems</a></h2>
         <p class="date">May 2025</p>
-        <p>
-          A closer look at SWIFT — not a money transfer system, but a global banking messenger — and why cutting off access to SWIFT
-          is more symbolic than fatal. In practice, it often means switching to a different communications channel.
-        </p>
+        <p>SWIFT is not a money transfer system but a secure global messaging network between banks. Being disconnected from it means changing the channel, not losing access to the world.</p>
       </div>
 
       <div class="article">
         <h2><a href="sanctions_en.html">Sanctions and Financial Restrictions</a></h2>
         <p class="date">October 2025</p>
-        <p>
-          Sanctions have become part of global economic reality. What used to be an exceptional tool is now a constant instrument
-          of international policy. But frequent use does not automatically make them effective.
-        </p>
+        <p>Sanctions have become a permanent instrument of global politics. Frequency of use does not make them more effective — design and enforcement do.</p>
       </div>
 
       <div class="article">
         <h2><a href="miscoding_en.html">International Payments and Miscoding</a></h2>
         <p class="date">July 2025</p>
-        <p>
-          In the era of sanctions and digital monitoring, cross-border payments are becoming less transparent.
-          “Miscoding” — intentionally assigning the “wrong” transaction category — is increasingly used to disguise
-          the real economic nature of a payment behind something that looks compliant.
-        </p>
+        <p>Miscoding — the deliberate misclassification of payment categories — has become a key adaptation tool in global transactions under sanctions and compliance pressure.</p>
       </div>
 
       <div class="article">
         <h2><a href="africa_en.html">Working in Africa</a></h2>
         <p class="date">October 2025</p>
-        <p>
-          Africa is not just “a continent of opportunities.” It is a continent of power structures and traditions.
-          Doing business in Nigeria means understanding traditional authority, tribal dynamics, and negotiation culture.
-          Without that, no project will last.
-        </p>
+        <p>Africa is not just a continent of opportunity — it is a continent of deep traditions and local authority. Success in Nigeria depends on understanding its power structures, tribal balance, and unwritten rules of partnership.</p>
       </div>
 
       <div class="article">
-        <h2><a href="ai_luddites_en.html">Neo-Luddites of the 21st Century: Why the Fear of AI Is the Same Old Story</a></h2>
+        <h2><a href="ai_luddites_en.html">Neo-Luddites of the 21st Century</a></h2>
         <p class="date">October 2025</p>
-        <p>
-          History repeats: people once smashed looms, now they want to “pause AI.”
-          The fear of technology is rarely about the technology itself — it’s about losing control.
-          Progress doesn’t ask for permission.
-        </p>
+        <p>The fear of technology has never been about machines. Like the Luddites of the past, modern “AI skeptics” fight change — but progress never asks for permission.</p>
       </div>
-
     </div>
 
     <div class="about">
-      <p><b>About this site:</b> This website serves as a personal platform for publishing analytical materials and reflections
-      on international payments, Africa, geo-economics, and technology. All views expressed are those of the author.</p>
+      <p><b>About this site:</b> A personal platform for analytical notes and reflections on global payments, Africa, technology, and geo-economics. All opinions expressed are the author's own.</p>
     </div>
 
     <div class="contacts">
@@ -298,9 +238,7 @@
       <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
     </div>
 
-    <footer>
-      © 2025 Sergei Olevskii
-    </footer>
+    <footer>© 2025 Sergei Olevskii</footer>
   </div>
 </body>
 </html>
