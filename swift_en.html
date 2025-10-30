@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Systems — Sergei Olevskii</title>
+  <title>Payment Systems (SWIFT) — Sergei Olevskii</title>
 
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <meta name="description" content="How SWIFT actually works — and why disconnection from SWIFT is not the same thing as being cut off from global finance.">
-  <meta property="og:title" content="Payment Systems — Sergei Olevskii">
-  <meta property="og:description" content="SWIFT is not money movement. It’s messaging. Cutting access is influence, not execution.">
+  <meta name="description" content="SWIFT is not a payment rail but a messaging network. Cutting it off is disruptive, not fatal—because value still finds a route through alternative channels.">
+  <meta property="og:title" content="Payment Systems (SWIFT) — Sergei Olevskii">
+  <meta property="og:description" content="What SWIFT really is, how messaging differs from settlement, and why sanctions hit communications harder than value flows.">
   <meta property="og:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
   <meta property="og:url" content="https://sergeyolevsky.github.io/swift_en.html">
   <meta name="twitter:card" content="summary_large_image">
@@ -36,6 +36,22 @@
       margin-bottom: 25px;
     }
 
+    .lang-switch {
+      font-size: 1.4em;
+      margin: 8px 0 6px 0;
+      user-select: none;
+    }
+
+    .lang-switch a {
+      text-decoration: none;
+      transition: transform 0.2s, filter 0.3s;
+    }
+
+    .lang-switch a:hover {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 6px rgba(0, 90, 255, 0.4));
+    }
+
     .name-title {
       font-size: 1.4em;
       font-weight: 600;
@@ -50,34 +66,18 @@
     }
 
     .subtitle {
-      font-size: 0.9em;
+      font-size: 0.95em;
       color: #555;
       margin: 0;
     }
 
-    .lang-switch {
-      font-size: 0.9em;
-      margin-bottom: 10px;
-    }
-
-    .lang-switch a {
-      color: #004aad;
-      text-decoration: none;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-
-    .lang-switch a:hover {
-      color: #002f7f;
-      text-shadow: 0 0 6px rgba(0,90,255,0.25);
-    }
-
     .portrait {
       text-align: center;
-      margin: 20px 0 30px 0;
+      margin: 16px 0 22px 0;
     }
 
     .portrait img {
-      width: 160px;
+      width: 150px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: transform 0.3s;
@@ -88,32 +88,39 @@
     }
 
     .article-header {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .article-title {
       font-size: 1.6em;
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
       line-height: 1.3;
+      text-align: center;
     }
 
     .date {
       font-size: 0.9em;
       color: #777;
-      margin-bottom: 15px;
+      text-align: center;
+      margin-bottom: 18px;
     }
 
     article p {
       text-align: justify;
-      margin-bottom: 16px;
-      font-size: 1em;
-      line-height: 1.55;
+      margin-bottom: 14px;
+      font-size: 1.02em;
+      line-height: 1.58;
+    }
+
+    article h3 {
+      font-size: 1.05em;
+      margin: 18px 0 8px;
     }
 
     .back-links {
-      margin-top: 30px;
-      font-size: 0.9em;
+      margin-top: 28px;
+      font-size: 0.95em;
       text-align: center;
     }
 
@@ -133,7 +140,7 @@
 
     .contacts {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 36px;
       font-size: 0.95em;
     }
 
@@ -152,63 +159,27 @@
       text-align: center;
       font-size: 0.8em;
       color: #777;
-      margin-top: 40px;
-      padding-bottom: 30px;
+      margin-top: 36px;
+      padding-bottom: 28px;
     }
 
     @media (max-width: 768px) {
-      .container {
-        padding: 15px;
-      }
-
-      .article-title {
-        font-size: 1.4em;
-      }
-
-      article p {
-        font-size: 0.95em;
-        text-align: left;
-      }
-
-      .portrait img {
-        width: 140px;
-      }
+      .container { padding: 15px; }
+      .article-title { font-size: 1.4em; }
+      article p { font-size: 0.98em; text-align: left; }
+      .portrait img { width: 140px; }
     }
 
     @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #111;
-        color: #ddd;
+      body { background-color: #111; color: #ddd; }
+      .subtitle { color: #aaa; }
+      .date { color: #999; }
+      .back-links a, .contacts a { color: #6ea8ff; border-color: #3b4d7a; }
+      .back-links a:hover, .contacts a:hover {
+        color: #9cc6ff; border-color: #6ea8ff; text-shadow: 0 0 10px rgba(160,200,255,0.45);
       }
-
-      .subtitle {
-        color: #aaa;
-      }
-
-      .date {
-        color: #999;
-      }
-
-      .back-links a,
-      .contacts a {
-        color: #6ea8ff;
-        border-color: #3b4d7a;
-      }
-
-      .back-links a:hover,
-      .contacts a:hover {
-        color: #9cc6ff;
-        border-color: #6ea8ff;
-        text-shadow: 0 0 10px rgba(160,200,255,0.45);
-      }
-
-      footer {
-        color: #888;
-      }
-
-      .portrait img {
-        box-shadow: 0 4px 14px rgba(255,255,255,0.1);
-      }
+      footer { color: #888; }
+      .portrait img { box-shadow: 0 4px 14px rgba(255,255,255,0.1); }
     }
   </style>
 </head>
@@ -217,15 +188,15 @@
   <div class="container">
     <header>
       <div class="lang-switch">
-        <a href="index.html">Русская версия</a> ·
-        <a href="en.html">Back to main page</a>
+        <a href="swift.html" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
+        <a href="en.html" title="English main page">🇬🇧</a>
       </div>
 
       <div class="name-title" onclick="window.location.href='en.html'">
         Sergei Olevskii
       </div>
       <p class="subtitle">
-        Practitioner in Global Payments, Emerging Markets, and Strategic Development
+        Specialist in International Payments and Cross-Border Settlements
       </p>
 
       <div class="portrait">
@@ -234,51 +205,104 @@
     </header>
 
     <section class="article-header">
-      <div class="article-title">Payment Systems</div>
+      <div class="article-title">Payment Systems (SWIFT): Messaging, Settlement, and the Illusion of a Kill Switch</div>
       <div class="date">May 2025</div>
     </section>
 
     <article>
       <p>
-        When people talk about “cutting a country off from SWIFT,” it usually sounds like a financial death sentence.
-        In reality, the situation is more technical — and less dramatic.
+        SWIFT is not a payment rail. It is a <b>messaging network</b> used by banks and payment institutions to
+        coordinate transfers. Money does not move “inside SWIFT”; <i>instructions</i> do. The actual value travels
+        through correspondent accounts and settlement systems built on bilateral balances, central bank money,
+        card networks, or regional clearinghouses. This distinction — <b>message vs. settlement</b> — is the core
+        misunderstanding behind the drama of “disconnecting from SWIFT.”
       </p>
 
+      <h3>Messaging ≠ Settlement</h3>
       <p>
-        SWIFT is not a payment system in the strict sense. It does not move money. It does not settle transactions.
-        What SWIFT actually does is deliver structured messages between banks and other financial institutions.
-        Those messages tell banks: who is paying whom, through which intermediaries, in what currency, under which reference.
+        When Bank A sends funds to Bank B in another country, it has to do two things: (1) <i>agree</i> with B on
+        what, when, and to whom; (2) <i>settle</i> the resulting obligation in real balances. SWIFT solves the first
+        task: it provides standardized formats (the legacy MT series and the newer ISO 20022 MX) so that
+        counterparties understand each other. The second task is solved elsewhere — through bilateral accounts,
+        central bank RTGS systems, netting arrangements, card schemes, or alternative rails. In practice, SWIFT is
+        the email with structured headers; settlement is the logistics.
       </p>
 
+      <h3>Why Cutting SWIFT Hurts but Doesn’t Kill</h3>
       <p>
-        In other words, SWIFT is infrastructure for financial <i>communication</i>, not financial <i>execution</i>.
-        Money still moves through correspondent banking, nostro/vostro accounts, central bank links, local clearing rails,
-        and so on — not “through SWIFT.” SWIFT is the standardized language and the courier, not the wire itself.
+        Disconnecting institutions from SWIFT <i>slows</i> their cross-border operations, especially with unfamiliar
+        counterparties. But it does not erase the underlying capacity to settle value. When the main road closes,
+        traffic shifts: to regional messaging, bilateral APIs, secure email, file-based exchanges, card rails,
+        or even manual workflows. Slower, costlier, riskier — yes. Fatal — no. The global economy is a network of
+        overlapping networks; redundancy is a feature, not a bug.
       </p>
 
+      <h3>ISO 20022: Better Messages, Same Old Problem</h3>
       <p>
-        This is why “disconnection from SWIFT” is often misunderstood. It is painful, but it is not the same thing
-        as “a country can no longer move money across borders.” What it really means is:
-        you lose access to the dominant global messaging network that most counterparties are comfortable with.
-        You’re forced to fall back to less convenient channels.
+        The migration from MT to ISO 20022 brings richer data — who the payer is, what the payment is for, more
+        precise compliance screening. That improves automation and reduces false positives. But it does not change
+        the political economy of value movement. You can standardize the message and still face frictions in
+        correspondent banking, sanctions screening, FX liquidity, and counterparty risk appetite.
       </p>
 
+      <h3>Correspondent Banking: The Hidden Engine</h3>
       <p>
-        Are there alternatives to SWIFT? Yes. Regional messaging systems, bank-to-bank bilateral arrangements,
-        manual confirmation flows, custom APIs, payment aggregators that sit between regions. None of this is elegant.
-        All of it increases friction, cost, and compliance risk. But in practice, cross-border value can still move.
+        Most cross-border bank transfers ultimately run through <b>correspondent accounts</b>: Bank A keeps a balance
+        with Bank B (or vice versa), and they debit/credit those balances as payments come in. That engine predates
+        SWIFT and will outlive it. What SWIFT brings is speed and reliability of <i>communication</i> about those
+        debits and credits. If your correspondent network is strong, you can operate even with degraded messaging.
+        If it’s weak, SWIFT alone won’t save you.
       </p>
 
+      <h3>“Alternatives to SWIFT”: What That Actually Means</h3>
       <p>
-        So the point is not “no money moves without SWIFT.” The point is leverage.
-        SWIFT is powerful because the network trusts it, not because it is the only technical way to send money.
-        Cutting access is pressure, not a literal shutdown of the pipes.
+        When people say “use alternatives to SWIFT,” they often conflate messaging with settlement. Alternatives
+        typically mean: (1) different <i>messaging</i> channels — regional networks, secure APIs, closed user groups,
+        encrypted email or SFTP; (2) different <i>settlement</i> pathways — regional RTGS/ACH, card networks, e-money
+        schemes, commodity-backed trades, or multilateral netting. In other words: you can switch both the walkie-talkie
+        <i>and</i> the trucking company.
       </p>
 
+      <h3>Cards, Remittances, and “Misdirection” of Metadata</h3>
       <p>
-        The paradox is this: the more politicized access to SWIFT becomes, the faster alternative messaging channels develop.
-        They may be clumsy and expensive at first — but they mature. And once they mature, global financial messaging
-        is no longer a monopoly.
+        Card networks and money transfer operators (MTOs) often function as pragmatic cross-border rails when the
+        banking channel is constrained. The mechanics differ — authorization + settlement in cards vs. payout networks
+        in remittances — but the operational point is the same: <b>metadata</b> drives risk decisions. Merchant category
+        codes (MCCs), “reason codes,” and sender/receiver data can be over-simplified or “optimized” to reduce friction.
+        This is where compliance meets creativity — and where regulators focus increasingly on <i>substance over form</i>.
+      </p>
+
+      <h3>Sanctions: Communications First, Value Second</h3>
+      <p>
+        Sanctions regimes hit communications channels early, because messaging is the easiest lever to pull at scale.
+        But value flows re-route. Banks and corporates rebuild corridors through regional hubs, non-sanctioned
+        intermediaries, or alternative clearing systems. The result is a <b>gray zone</b> of slower, more expensive,
+        more fragmented flows — but still flows. For policymakers, the hard problem is not “block SWIFT” but
+        <i>raise the cost of re-routing</i> without harming legitimate trade.
+      </p>
+
+      <h3>GPI, Tracking, and Trust</h3>
+      <p>
+        One of SWIFT’s underrated contributions is better <b>end-to-end tracking</b> (e.g., SWIFT gpi), which reduces
+        uncertainty for corporates and banks. But tracking is only as useful as counterparties’ willingness to act
+        on exceptions. Trust in cross-border finance is not created by data alone; it is created by institutions that
+        respond to data. That is why reputation and governance matter more than any particular messaging standard.
+      </p>
+
+      <h3>Operational Reality: What Practitioners Actually Do</h3>
+      <p>
+        Practitioners rarely argue theology about “rails.” They maintain multiple channels; they keep relationships
+        warm in several jurisdictions; they test fallback paths; they diversify FX providers; they use cards/remittance
+        rails when bank corridors are unreliable; and they invest in <b>metadata quality</b> to pass compliance screens
+        without misrepresentation. The winning strategy is redundancy + discipline.
+      </p>
+
+      <h3>The Takeaway</h3>
+      <p>
+        SWIFT is a powerful, standardized <i>language</i> for payments — not the bloodstream. Cutting the channel
+        disrupts the conversation, not the existence of value. The global system adapts: sometimes elegantly, sometimes
+        clumsily, always with a cost. The serious questions are about <b>settlement capacity, correspondent coverage,
+        liquidity, and compliance design</b>. Get those right, and the choice of walkie-talkie becomes a detail.
       </p>
     </article>
 
