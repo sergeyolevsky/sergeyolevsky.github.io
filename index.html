@@ -34,14 +34,8 @@
     "image": "https://sergeyolevsky.github.io/sergei_caricature.png",
     "jobTitle": "Эксперт по международным платежам и трансграничным расчётам",
     "description": "Сергей Олевский — эксперт в области международных платежей и стратегического развития. Опыт работы в России, Африке и на глобальных рынках.",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Mining Technologies Co. Ltd"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Oxford Saïd Business School"
-    },
+    "worksFor": { "@type": "Organization", "name": "Mining Technologies Co. Ltd" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Oxford Saïd Business School" },
     "knowsAbout": ["международные платежи", "Африка", "финансовые технологии", "геоэкономика"],
     "sameAs": [
       "https://t.me/solevsky",
@@ -51,28 +45,52 @@
   </script>
 
   <style>
+    /* Флажки (как на en.html) */
+    .lang-switch {
+      text-align: center;
+      margin: 12px 0 8px 0;
+      font-size: 1.4em;
+      user-select: none;
+    }
+    .lang-switch a {
+      text-decoration: none;
+      transition: transform 0.2s, filter 0.3s;
+    }
+    .lang-switch a:hover {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 6px rgba(0, 90, 255, 0.4));
+    }
+
+    /* Портрет */
     .portrait {
       text-align: center;
       margin-top: 20px;
       margin-bottom: 25px;
     }
-
     .portrait img {
       max-width: 220px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      height: auto;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <!-- Флажки -->
+    <div class="lang-switch">
+      <a href="index.html" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
+      <a href="en.html" title="English version">🇬🇧</a>
+    </div>
+
     <h1 class="name-title">Сергей Олевский</h1>
     <p class="subtitle">Practitioner in Global Payments and Cross-Border Finance</p>
 
     <!-- Шарж -->
     <div class="portrait">
-      <img src="images/sergei_caricature.png" alt="Sergei Olevskii caricature">
+      <!-- ✅ верный путь к файлу в корне -->
+      <img src="sergei_caricature.png" alt="Sergei Olevskii caricature">
     </div>
 
     <p>
