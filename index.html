@@ -33,113 +33,37 @@
       scroll-behavior: smooth;
     }
 
-    .container {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+    .container { max-width: 820px; margin: 0 auto; padding: 20px; }
 
-    .lang-switch {
-      text-align: center;
-      margin-bottom: 15px;
-      font-size: 1.6em;
-      user-select: none;
-    }
+    .lang-switch { text-align: center; margin-bottom: 15px; font-size: 1.6em; user-select: none; }
 
-    .lang-switch a {
-      display: inline-block;
-      text-decoration: none;
-      transition: transform 0.2s, filter 0.3s, opacity 0.3s;
-    }
+    .lang-switch a { display: inline-block; text-decoration: none; transition: transform 0.2s, filter 0.3s, opacity 0.3s; }
+    .lang-switch a:hover { transform: scale(1.15); filter: drop-shadow(0 0 6px rgba(0, 90, 255, 0.4)); }
+    .lang-switch a.active { opacity: 0.4; pointer-events: none; cursor: default; filter: grayscale(100%) brightness(70%); transform: scale(1); }
 
-    .lang-switch a:hover {
-      transform: scale(1.15);
-      filter: drop-shadow(0 0 6px rgba(0, 90, 255, 0.4));
-    }
+    .name-title { text-align: center; font-size: 2.2em; margin-top: 10px; margin-bottom: 8px; }
+    .subtitle { text-align: center; font-size: 1.1em; color: #555; margin-bottom: 15px; }
 
-    .lang-switch a.active {
-      opacity: 0.4;
-      pointer-events: none;
-      cursor: default;
-      filter: grayscale(100%) brightness(70%);
-      transform: scale(1);
-    }
-
-    .name-title {
-      text-align: center;
-      font-size: 2.2em;
-      margin-top: 10px;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .portrait {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 25px;
-    }
-
-    .portrait img {
-      width: 220px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
-    }
-
+    .portrait { text-align: center; margin-top: 20px; margin-bottom: 25px; }
+    .portrait img { width: 220px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.3s; }
     .portrait img:hover { transform: scale(1.03); }
 
     p { text-align: justify; margin-bottom: 16px; }
 
     .articles { margin-top: 30px; }
     .article { margin-bottom: 35px; }
-
-    .article h2 a {
-      color: #004aad;
-      text-decoration: none;
-      border-bottom: 2px solid #aac4ff;
-      transition: color 0.3s, border-color 0.3s;
-    }
-
-    .article h2 a:hover {
-      color: #002f7f;
-      border-color: #004aad;
-    }
+    .article h2 a { color: #004aad; text-decoration: none; border-bottom: 2px solid #aac4ff; transition: color 0.3s, border-color 0.3s; }
+    .article h2 a:hover { color: #002f7f; border-color: #004aad; }
 
     .date { color: #777; font-size: 0.9em; margin-bottom: 10px; }
 
-    .about {
-      margin-top: 40px;
-      font-size: 0.95em;
-      color: #444;
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-    }
+    .about { margin-top: 40px; font-size: 0.95em; color: #444; border-top: 1px solid #ddd; padding-top: 20px; }
 
-    .contacts {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.95em;
-    }
-
-    .contacts a {
-      color: #004aad;
-      text-decoration: none;
-    }
-
+    .contacts { text-align: center; margin-top: 40px; font-size: 0.95em; }
+    .contacts a { color: #004aad; text-decoration: none; }
     .contacts a:hover { color: #002f7f; }
 
-    footer {
-      text-align: center;
-      font-size: 0.85em;
-      color: #777;
-      margin-top: 40px;
-    }
+    footer { text-align: center; font-size: 0.85em; color: #777; margin-top: 40px; }
   </style>
 </head>
 
@@ -153,12 +77,42 @@
     <h1 class="name-title">Сергей Олевский</h1>
     <p class="subtitle">Эксперт в области международных платежей и стратегического развития</p>
 
-    <div class="portrait">
-      <img src="sergei_main.jpg" alt="Сергей Олевский">
-    </div>
+    <div class="portrait"><img src="sergei_main.jpg" alt="Сергей Олевский"></div>
 
-    <!-- остальная часть страницы без изменений -->
+    <p>
+      Родился в Москве, играл в хоккей за юношескую команду московского <b>«Спартака»</b>.
+      Эксперт с более чем 15-летним опытом в сфере международных платежей и денежных переводов.
+      Работал в компании <b>Transfast</b> (впоследствии — <b>Mastercard</b>) и консультировал <b>Earthport</b> — бывшую инвестиционную структуру <b>IFC (Всемирного банка)</b>, ныне действующую под брендом <b>Visa Direct</b>, где занимался вопросами платёжной инфраструктуры, комплаенса и глобальных расчётов.
+      Участвовал в работе экспертной группы при <b>Банке России</b> по подготовке закона <b>«О национальной платёжной системе» (ФЗ-161)</b>.
+      Учился в США и Канаде, проходил программы в <b>Oxford Saïd Business School</b>.
+      Работал в странах СНГ, Ближнего Востока и в Нигерии, где занимался разработкой месторождения колумбита (Nb-Ta).
+      Сегодня — на стыке технологий, финансов и геоэкономики.
+    </p>
 
-  </div>
-</body>
-</html>
+    <div class="articles">
+      <div class="article">
+        <h2><a href="swift.html">Платёжные системы</a></h2>
+        <p class="date">Май 2025</p>
+        <p>SWIFT — это банковский мессенджер, а не система переводов.</p>
+      </div>
+
+      <div class="article">
+        <h2><a href="sanctions.html">Санкции и финансовые ограничения</a></h2>
+        <p class="date">Октябрь 2025</p>
+        <p>Санкции стали инструментом мировой политики.</p>
+      </div>
+
+      <div class="article">
+        <h2><a href="miscoding.html">Международные платежи и мискодинг</a></h2>
+        <p class="date">Июль 2025</p>
+        <p>Мискодинг — ключевой инструмент адаптации бизнеса в условиях санкций.</p>
+      </div>
+
+      <div class="article">
+        <h2><a href="africa.html">Как работать в Африке</a></h2>
+        <p class="date">Октябрь 2025</p>
+        <p>Успех в Африке зависит от понимания структуры власти и доверия.</p>
+      </div>
+
+      <div class="article">
+        <h2><a href="ai_luddites.html">Неолуддиты XXI века</a></
