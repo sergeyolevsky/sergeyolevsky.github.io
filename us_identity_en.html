@@ -1,57 +1,99 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Политическая культура: США на пороге двух идентичностей — Сергей Олевский</title>
-
+  <title>Political Culture: The United States on the Threshold of Two Identities — Sergei Olevskii</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 
-  <meta name="description" content="Аналитика о трансформации политической идентичности в США и ослаблении общего символического пространства.">
-  <meta name="keywords" content="США, политическая культура, идентичность, поляризация, институты, легитимность">
-  <meta name="author" content="Сергей Олевский">
-
-  <meta property="og:title" content="Политическая культура: США на пороге двух идентичностей — Сергей Олевский">
-  <meta property="og:description" content="Как меняется политическая культура США и что происходит с общей рамкой идентичности.">
-  <meta property="og:image" content="https://sergeyolevsky.github.io/sergei_caricature.png">
-  <meta property="og:url" content="https://sergeyolevsky.github.io/us_identity.html">
+  <style>
+    body { margin:0; padding:0; font-family:"Segoe UI", Roboto, sans-serif; line-height:1.6; color:#222; background:#fafafa; transition:background-color .4s, color .4s; }
+    .container { max-width:820px; margin:0 auto; padding:20px; }
+    header { text-align:center; margin-bottom:25px; }
+    .lang-switch { font-size:1.4em; margin:8px 0 6px; user-select:none; }
+    .lang-switch a { text-decoration:none; transition:transform .2s, filter .3s; }
+    .lang-switch a:hover { transform:scale(1.15); filter:drop-shadow(0 0 6px rgba(0,90,255,.4)); }
+    .name-title { font-size:1.4em; font-weight:600; margin:5px 0 2px; cursor:pointer; transition:text-shadow .4s, color .3s; }
+    .name-title:hover { text-shadow:0 0 12px rgba(0,90,255,.4); color:#002f7f; }
+    .subtitle { font-size:.95em; color:#555; margin:0; }
+    .portrait { text-align:center; margin:16px 0 22px; }
+    .portrait img { width:150px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.15); transition:transform .3s; }
+    .portrait img:hover { transform:scale(1.03); }
+    .article-title { text-align:center; font-size:1.6em; font-weight:600; margin-bottom:6px; }
+    .date { text-align:center; font-size:.9em; color:#777; margin-bottom:18px; }
+    article p { text-align:justify; margin-bottom:14px; font-size:1.03em; line-height:1.58; }
+    .back-links { text-align:center; margin-top:28px; font-size:.95em; }
+    .back-links a { color:#004aad; text-decoration:none; margin:0 6px; border-bottom:1px solid #aac4ff; transition:color .3s, border-color .3s; }
+    .back-links a:hover { color:#002f7f; border-color:#004aad; text-shadow:0 0 6px rgba(0,90,255,.25); }
+    .contacts { text-align:center; margin-top:36px; font-size:.95em; }
+    .contacts a { color:#004aad; text-decoration:none; transition:color .3s, text-shadow .3s; }
+    .contacts a:hover { color:#002f7f; text-shadow:0 0 6px rgba(0,90,255,.25); }
+    footer { text-align:center; font-size:.8em; color:#777; margin-top:36px; padding-bottom:28px; }
+    @media (max-width:768px) { .container{padding:15px;} article p{font-size:.98em; text-align:left;} .portrait img{width:140px;} }
+    @media (prefers-color-scheme:dark) {
+      body { background:#111; color:#ddd; }
+      .subtitle { color:#aaa; } .date { color:#999; }
+      .back-links a, .contacts a { color:#6ea8ff; border-color:#3b4d7a; }
+      .back-links a:hover, .contacts a:hover { color:#9cc6ff; border-color:#6ea8ff; text-shadow:0 0 10px rgba(160,200,255,.45); }
+      footer { color:#888; }
+      .portrait img { box-shadow:0 4px 14px rgba(255,255,255,.1); }
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Политическая культура: США на пороге двух идентичностей</h1>
-    <p class="date">Ноябрь 2025</p>
-  </header>
+  <div class="container">
+    <header>
+      <div class="lang-switch">
+        <a href="us_identity.html" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
+        <a href="us_identity_en.html" class="active" title="English version">🇬🇧</a>
+      </div>
 
-  <div class="portrait">
-    <img src="sergei_caricature.png" alt="Портрет Сергея Олевского">
+      <div class="name-title" onclick="window.location.href='en.html'">Sergei Olevskii</div>
+      <p class="subtitle">Practitioner in Global Payments & Strategic Development</p>
+
+      <div class="portrait"><img src="sergei_caricature.png" alt="Sergei Olevskii caricature"></div>
+    </header>
+
+    <section class="article-header">
+      <div class="article-title">Political Culture: The United States on the Threshold of Two Identities</div>
+      <div class="date">November 2025</div>
+    </section>
+
+    <article>
+      <p>American political institutions are commonly perceived as stable and self-regulating: separation of powers, federalism, state autonomy, a developed electoral system, and judicial oversight. Yet the resilience of a state depends not only on its formal mechanisms but also on a shared symbolic space in which those mechanisms are seen as legitimate.</p>
+
+      <p>For two centuries, American political culture rested on the idea of a common project — the belief that the state provides the framework for collective action among groups with different interests and worldviews. As long as that framework held, conflicts remained internal and manageable. Today, that framework is under strain.</p>
+
+      <h2>The State in Conservative Discourse</h2>
+      <p>Since the mid-20th century, conservative rhetoric has increasingly framed the state as an external entity capable of restricting personal and economic freedom. This does not imply a rejection of institutions but weakens the perception of the state as a shared resource. If the state is seen as something “other,” the outcomes of its procedures — including elections — are more readily perceived as imposed rather than collectively produced. This reduces political legitimacy.</p>
+
+      <h2>Shift in Liberal Cultural Politics</h2>
+      <p>At the same time, liberal discourse has foregrounded identity politics. While aimed at recognizing diversity, it has led to symbolic exclusion: certain groups are not removed from political procedures but from cultural acknowledgment as equal participants in the shared civic project.</p>
+
+      <h2>Breakdown of the Shared Identity Framework</h2>
+      <p>These trajectories reinforce one another: one part of society views the state as a controlling apparatus; another sees parts of society as culturally “incomplete.” Formally, the system remains unified, but the symbolic foundation of a shared identity no longer is.</p>
+
+      <h2>A New Definition of “We”</h2>
+      <p>The United States is not collapsing but undergoing a reconfiguration of its political culture. The country remains institutionally unified but divided in its understanding of what constitutes the shared project. The future depends on whether a new language of collective identity can be articulated — or whether fragmentation becomes the stable norm.</p>
+    </article>
+
+    <div class="back-links">
+      <a href="en.html">← Back to Home</a> |
+      <a href="us_identity.html" title="Русская версия">🇷🇺 Russian version</a>
+    </div>
+
+    <div class="contacts">
+      <p><b>Contacts:</b><br>
+        <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+        <a href="mailto:sergei.olevskii@icloud.com">Email</a> |
+        <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <footer>© 2025 Sergei Olevskii</footer>
   </div>
-
-  <article>
-    <p>Американские политические институты часто воспринимаются как устойчивые и саморегулирующиеся: разделение властей, федерализм, автономия штатов, развитая система выборов и судебного контроля. Но устойчивость государств определяется не только формальными механизмами, а наличием общего символического пространства, в рамках которого эти механизмы считаются легитимными.</p>
-
-    <p>Два столетия американская политическая культура опиралась на идею общего проекта — представление о том, что государство служит рамкой совместного действия людей с различными интересами и взглядами. Пока эта рамка сохранялась, политические конфликты оставались внутренними и управляемыми. Сегодня эта рамка испытывает заметное напряжение.</p>
-
-    <h2>Политическая роль государства в консервативном дискурсе</h2>
-    <p>Со второй половины XX века в консервативной риторике укрепилось представление о государстве как о внешней структуре, ограничивающей индивидуальную и экономическую свободу. Это не равнозначно отказу от институтов, но ослабляет восприятие государства как общего ресурса. Если государство ощущается как «чужое», то и результаты его процедур — включая выборы — легче воспринимать как навязанные, а не как часть совместного процесса. Так снижается легитимность политического порядка.</p>
-
-    <h2>Сдвиг в либеральной культурной политике</h2>
-    <p>Параллельно в демократическом дискурсе на первый план вышла политика идентичностей. Её цель — признание многообразия, но сопутствующая символическая переоценка статуса образования, языка и культурных норм может вести к исключению части общества не из процедур, а из символического признания. Участие таких групп в общем проекте перестаёт восприниматься как равнозначное.</p>
-
-    <h2>Разрыв общей рамки идентичности</h2>
-    <p>Эти процессы взаимно усиливаются: одни видят в государстве аппарат внешнего контроля, другие — «неполностью включённые» группы, отстающие от доминирующего культурного кода. Формально система остаётся единой, но символическая основа общей идентичности уже не разделяется всеми.</p>
-
-    <h2>Порог нового определения «мы»</h2>
-    <p>Современные США не находятся в состоянии распада, но переживают перенастройку политической культуры. Страна остаётся институционально единой, однако разделённой в представлениях о том, что составляет её общий проект. Дальнейшая динамика зависит от того, удастся ли сформировать новый язык совместного будущего, либо фрагментация идентичностей закрепится как долговременная норма.</p>
-  </article>
-
-  <div class="back-links">
-    <a href="index.html">← На главную</a> |
-    <a href="us_identity_en.html" title="Перейти на английскую версию статьи">🇬🇧 English version of this article</a>
-  </div>
-
-  <footer>
-    <p>© 2025 Сергей Олевский</p>
-  </footer>
 </body>
 </html>
