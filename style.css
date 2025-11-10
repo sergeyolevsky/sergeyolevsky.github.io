@@ -138,22 +138,25 @@ footer {
   .portrait img { box-shadow: 0 4px 14px rgba(255,255,255,0.1); }
 }
 
-/* ✅ Фиксация выравнивания контактов НА ВСЕХ страницах */
-.contacts, .contacts p, .contacts a {
-  text-align: center !important;
-  justify-content: center !important;
-  display: inline-block;
+/* Правильное выравнивание контактов */
+.contacts {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.95em;
 }
 
-/* ✅ Дополнительное гарантированное центрирование */
-.contacts {
-  text-align: center !important;
+.contacts p {
+  margin: 0;
 }
-/* FIX CONTACTS CENTER ON ALL PAGES */
-.contacts,
-.contacts p,
+
 .contacts a {
-  text-align: center !important;
   display: inline-block;
-  width: 100%;
+  margin: 0 6px;
+  color: #004aad;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contacts a:hover {
+  color: #002f7f;
 }
