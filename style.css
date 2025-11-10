@@ -169,3 +169,7 @@ footer {
   margin: 0 6px;
 }
 .contacts p { text-align: center !important; }
+
+.contacts p {
+  text-align: center !important;
+}
