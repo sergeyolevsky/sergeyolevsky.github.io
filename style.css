@@ -135,9 +135,17 @@ footer {
     text-shadow: 0 0 10px rgba(160,200,255,0.45);
   }
   footer { color: #888; }
-  .portrait img { box-shadow: 0 4px 14px rgba(255,255,255,.1); }
+  .portrait img { box-shadow: 0 4px 14px rgba(255,255,255,0.1); }
 }
-/* Фиксация выравнивания контактов на всех страницах */
-.contacts, .contacts p {
+
+/* ✅ Фиксация выравнивания контактов НА ВСЕХ страницах */
+.contacts, .contacts p, .contacts a {
+  text-align: center !important;
+  justify-content: center !important;
+  display: inline-block;
+}
+
+/* ✅ Дополнительное гарантированное центрирование */
+.contacts {
   text-align: center !important;
 }
