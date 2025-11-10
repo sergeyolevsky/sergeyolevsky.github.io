@@ -149,3 +149,11 @@ footer {
 .contacts {
   text-align: center !important;
 }
+/* FIX CONTACTS CENTER ON ALL PAGES */
+.contacts,
+.contacts p,
+.contacts a {
+  text-align: center !important;
+  display: inline-block;
+  width: 100%;
+}
