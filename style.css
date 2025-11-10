@@ -137,3 +137,7 @@ footer {
   footer { color: #888; }
   .portrait img { box-shadow: 0 4px 14px rgba(255,255,255,.1); }
 }
+/* Фиксация выравнивания контактов на всех страницах */
+.contacts, .contacts p {
+  text-align: center !important;
+}
