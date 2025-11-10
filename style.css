@@ -160,3 +160,11 @@ footer {
 .contacts a:hover {
   color: #002f7f;
 }
+.contact-links {
+  text-align: center;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 0 6px;
+}
