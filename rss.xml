@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-<channel>
+  <channel>
+    <title>Sergey Olevskii</title>
+    <link>https://sergeyolevsky.github.io/</link>
+    <description>Articles on global payments, Africa, strategy and political economy</description>
+    <language>en-us</language>
 
-<title>Sergey Olevskii</title>
-<link>https://sergeyolevsky.github.io</link>
-<description>Articles on global payments, Africa, strategy and political economy</description>
+    <item>
+      <title>International Payments &amp; Miscoding</title>
+      <link>https://sergeyolevsky.github.io/swift.html</link>
+      <description>How financial transactions bypass sanctions and regulatory controls.</description>
+    </item>
 
-<item>
-<title>International Payments &amp; Miscoding</title>
-<link>https://sergeyolevsky.github.io/swift.html</link>
-<description>How financial transactions bypass sanctions and regulatory controls.</description>
-</item>
+    <item>
+      <title>How to Work in Africa</title>
+      <link>https://sergeyolevsky.github.io/africa.html</link>
+      <description>Practical observations from working in Nigeria.</description>
+    </item>
 
-<item>
-<title>How to Work in Africa</title>
-<link>https://sergeyolevsky.github.io/africa.html</link>
-<description>Practical observations from working in Nigeria.</description>
-</item>
-
-<item>
-<title>Strategic Role of Niobium and Tantalum</title>
-<link>https://sergeyolevsky.github.io/niobium.html</link>
-<description>Why Nb-Ta minerals matter for modern industry.</description>
-</item>
-
-</channel>
+    <item>
+      <title>Strategic Role of Niobium and Tantalum</title>
+      <link>https://sergeyolevsky.github.io/niobium.html</link>
+      <description>Why Nb-Ta minerals matter for modern industry.</description>
+    </item>
+  </channel>
 </rss>
