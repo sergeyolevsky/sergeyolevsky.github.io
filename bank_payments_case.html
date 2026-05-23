@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Если банк принимал платежи — вопрос не только в банке — Сергей Олевский</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { margin:0; padding:0; font-family:"Segoe UI", Roboto, sans-serif; line-height:1.6; color:#222; background:#fafafa; transition:background-color .4s, color .4s; }
+    .container { max-width:820px; margin:0 auto; padding:20px; }
+    header { text-align:center; margin-bottom:25px; }
+    .lang-switch { font-size:1.4em; margin:8px 0 6px; user-select:none; }
+    .lang-switch a { text-decoration:none; transition:transform .2s, filter .3s; }
+    .lang-switch a:hover { transform:scale(1.15); filter:drop-shadow(0 0 6px rgba(0,90,255,.4)); }
+    .name-title { font-size:1.4em; font-weight:600; margin:5px 0 2px; cursor:pointer; transition:text-shadow .4s, color .3s; }
+    .name-title:hover { text-shadow:0 0 12px rgba(0,90,255,.4); color:#002f7f; }
+    .subtitle { font-size:.95em; color:#555; margin:0; }
+    .portrait { text-align:center; margin:16px 0 22px; }
+    .portrait img { width:150px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.15); transition:transform .3s; }
+    .portrait img:hover { transform:scale(1.03); }
+    .article-title { text-align:center; font-size:1.6em; font-weight:600; margin-bottom:6px; }
+    .date { text-align:center; font-size:.9em; color:#777; margin-bottom:18px; }
+    article p { text-align:justify; margin-bottom:14px; font-size:1.03em; line-height:1.58; }
+    .back-links { text-align:center; margin-top:28px; font-size:.95em; }
+    .back-links a { color:#004aad; text-decoration:none; margin:0 6px; border-bottom:1px solid #aac4ff; transition:color .3s, border-color .3s; }
+    .back-links a:hover { color:#002f7f; border-color:#004aad; text-shadow:0 0 6px rgba(0,90,255,.25); }
+    .contacts { text-align:center; margin-top:36px; font-size:.95em; }
+    .contacts a { color:#004aad; text-decoration:none; transition:color .3s, text-shadow .3s; }
+    .contacts a:hover { color:#002f7f; text-shadow:0 0 6px rgba(0,90,255,.25); }
+    footer { text-align:center; font-size:.8em; color:#777; margin-top:36px; padding-bottom:28px; }
+    @media (max-width:768px) { .container{padding:15px;} article p{font-size:.98em; text-align:left;} .portrait img{width:140px;} }
+    @media (prefers-color-scheme:dark) {
+      body { background:#111; color:#ddd; }
+      .subtitle { color:#aaa; } .date { color:#999; }
+      .back-links a, .contacts a { color:#6ea8ff; border-color:#3b4d7a; }
+      .back-links a:hover, .contacts a:hover { color:#9cc6ff; border-color:#6ea8ff; text-shadow:0 0 10px rgba(160,200,255,.45); }
+      footer { color:#888; }
+      .portrait img { box-shadow:0 4px 14px rgba(255,255,255,.1); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="lang-switch">
+        <a href="bank_payments_case.html" class="active" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
+        <a href="bank_payments_case_eng.html" title="English version">🇬🇧</a>
+      </div>
+
+      <div class="name-title" onclick="window.location.href='index.html'">Сергей Олевский</div>
+      <p class="subtitle">Практик в области международных платежей и стратегического развития</p>
+
+      <div class="portrait">
+        <img src="sergei_caricature.png" alt="Сергей Олевский карикатура">
+      </div>
+    </header>
+
+    <section class="article-header">
+      <div class="article-title">
+        Если банк принимал платежи — вопрос не только в банке
+      </div>
+      <div class="date">Май 2026</div>
+    </section>
+
+    <article>
+
+      <p>
+        После задержания крупного игрока на рынке онлайн-платежей снова появится привычная картина: нелегальные казино, преступные схемы, незаконные переводы.
+      </p>
+
+      <p>
+        Проблема в том, что такое объяснение слишком поверхностно.
+      </p>
+
+      <p>
+        Главный вопрос здесь не в том, существовали ли платежи в адрес нелегальных казино. Главный вопрос — как именно такая система может работать долго, масштабно и через банковскую инфраструктуру подобной Газпромбанку?
+      </p>
+
+      <p>
+        Важно понимать механику.
+      </p>
+
+      <p>
+        Речь здесь обычно идёт не о классическом gambling acquiring, когда казино официально подключено как merchant и принимает карточные платежи через gambling MCC. И даже не как мискодинг, когда процессят казино под MCC каких-то иных услуг.
+      </p>
+
+      <p>
+        Все это потому что игроку всё равно, как устроена система. Он просто пополняет счёт. Нажимает кнопку депозита, получает карту или реквизиты, переводит деньги — баланс появляется.
+      </p>
+
+      <p>
+        Формально это зачастую обычный P2P-перевод между физическими лицами. Фактически — это пополнение игрового счёта. То есть P2P здесь становится заменой классического эквайринга. Чего уж греха таить, СБП-переводы сейчас повсеместно заменяют классический эквайринг, но сути это не меняет.
+      </p>
+
+      <p>
+        Снаружи всё выглядит как обычные переводы между физлицами. Внутри — это платёжная инфраструктура для gambling-индустрии.
+      </p>
+
+      <p>
+        Чтобы подобная модель работала, недостаточно просто технической платформы. Самое главное в этом бизнесе — банк и отношения с мерчантом, а в данном случае — с казино. Особенно с банком — мерчант, да еще такой как подобное казино, на хорошие условия придет. Не целиком, а частично, постепенно увеличивая объёмы.
+      </p>
+
+      <p>
+        И здесь важно понимать базовую реальность рынка:
+      </p>
+
+      <p>
+        все серые и нелегальные онлайн-казино в той или иной степени вырастают из легального gambling-бизнеса. Новичкам просто не войти на этот рынок. Игроки придут туда, где они уже все знают. А уже потом оттуда могут переходить в другие игровые «пространства».
+      </p>
+
+      <p>
+        Те же люди. Те же команды. Те же компетенции. Те же affiliate-сети. Те же специалисты по трафику, антифроду, retention, risk management и платежам. И те же люди, обсуждающие комиссии за процессинг — тот самый раздел бизнеса, где обсуждаются и иные вознаграждения между всеми, так сказать, стейкхолдерами.
+      </p>
+
+      <p>
+        Нелегальный сегмент не возникает отдельно. Он вырастает рядом с легальным рынком и использует те же навыки, ту же инфраструктуру и те же деловые связи.
+      </p>
+
+      <p>
+        Точно так же и платёжная сторона.
+      </p>
+
+      <p>
+        Просто так зайти в этот бизнес невозможно. Либо ты уже встроен в существующую экосистему, либо у тебя должны быть очень серьёзные деньги, связи и доступ к банковской инфраструктуре.
+      </p>
+
+      <p>
+        И здесь начинается самое интересное.
+      </p>
+
+      <p>
+        Версия «всё решили в банке» выглядит слишком слабой, если речь идёт о крупных потоках и долгой работе.
+      </p>
+
+      <p>
+        Потому что массовые P2P-переводы, которые фактически являются пополнением игровых счетов, неизбежно оставляют след:
+      </p>
+
+      <p>
+        — повторяемые транзакции, причём эмитенты и платёжные инструменты, используемые трудовыми мигрантами, в значительной степени были одни и те же: Сбер, Тинькофф, Золотая Корона, МТС;<br>
+        — концентрация переводов;<br>
+        — высокая оборачиваемость;<br>
+        — быстрые переливы денег;<br>
+        — устойчивые поведенческие паттерны.
+      </p>
+
+      <p>
+        Если поток существует долго, значит, вопрос уже не только к банку.
+      </p>
+
+      <p>
+        Если внутри банка всё «порешали», то логично предположить, что уровень терпимости был шире. Потому что у банков есть не только собственные службы контроля. Есть регулятор, мониторинг, надзор, требования по подозрительным операциям и множество внешних уровней контроля.
+      </p>
+
+      <p>
+        Именно поэтому главный вопрос этой истории выглядит иначе.
+      </p>
+
+      <p>
+        Не:
+      </p>
+
+      <p>
+        «Было ли казино?»
+      </p>
+
+      <p>
+        И даже не:
+      </p>
+
+      <p>
+        «Кто принимал платежи?»
+      </p>
+
+      <p>
+        А:
+      </p>
+
+      <p>
+        если модель работала долго, что изменилось сейчас?
+      </p>
+
+      <p>
+        Есть ещё одна важная деталь:
+      </p>
+
+      <p>
+        Значительная часть аудитории онлайн-казино в России — в том числе в сером сегменте — долгое время состояла из трудовых мигрантов: таксистов, курьеров, дворников, строителей, разнорабочих. Людей, которые тяжело работали, отправляли деньги домой и параллельно играли онлайн.
+      </p>
+
+      <p>
+        Это были массовые, небольшие, но постоянные депозиты.
+      </p>
+
+      <p>
+        Но за последние годы эта аудитория объективно сократилась. Значительная часть людей, как известно, уехала. Изменилась структура миграции, занятости и денежных потоков.
+      </p>
+
+      <p>
+        Другими словами:
+      </p>
+
+      <p>
+        вполне возможно, что рынок не вырос — а наоборот, стал меньше.
+      </p>
+
+      <p>
+        А когда рынок сжимается, меняется всё.
+      </p>
+
+      <p>
+        Начинается борьба за уменьшающийся денежный поток. Меняются стимулы. Меняются договорённости. Меняется уровень допустимости.
+      </p>
+
+      <p>
+        В таких условиях история уже может быть не только про законность или незаконность.
+      </p>
+
+      <p>
+        Она может быть про изменение правил игры.
+      </p>
+
+      <p>
+        Потому что если система работала долго и через одни и те же банковские инфраструктуры, то главный вопрос этой истории остаётся прежним:
+      </p>
+
+      <p>
+        если банк принимал — вопрос, вероятно, был не только в банке. Тогда что именно изменилось сейчас?
+      </p>
+
+    </article>
+
+    <div class="back-links">
+      <a href="index.html">← На главную</a> |
+      <a href="bank_payments_case_eng.html">🇬🇧 English version of this article</a>
+    </div>
+
+    <div class="contacts">
+      <p><b>Контакты:</b><br>
+        <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+        <a href="mailto:sergei.olevskii@icloud.com">Email</a> |
+        <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <footer>© 2026 Сергей Олевский</footer>
+  </div>
+</body>
+</html>
