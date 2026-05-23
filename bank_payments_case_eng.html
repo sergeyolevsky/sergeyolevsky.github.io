@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If the Bank Accepted the Payments, the Question Is Not Only About the Bank — Sergei Olevskii</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { margin:0; padding:0; font-family:"Segoe UI", Roboto, sans-serif; line-height:1.6; color:#222; background:#fafafa; transition:background-color .4s, color .4s; }
+    .container { max-width:820px; margin:0 auto; padding:20px; }
+    header { text-align:center; margin-bottom:25px; }
+    .lang-switch { font-size:1.4em; margin:8px 0 6px; user-select:none; }
+    .lang-switch a { text-decoration:none; transition:transform .2s, filter .3s; }
+    .lang-switch a:hover { transform:scale(1.15); filter:drop-shadow(0 0 6px rgba(0,90,255,.4)); }
+    .name-title { font-size:1.4em; font-weight:600; margin:5px 0 2px; cursor:pointer; transition:text-shadow .4s, color .3s; }
+    .name-title:hover { text-shadow:0 0 12px rgba(0,90,255,.4); color:#002f7f; }
+    .subtitle { font-size:.95em; color:#555; margin:0; }
+    .portrait { text-align:center; margin:16px 0 22px; }
+    .portrait img { width:150px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.15); transition:transform .3s; }
+    .portrait img:hover { transform:scale(1.03); }
+    .article-title { text-align:center; font-size:1.6em; font-weight:600; margin-bottom:6px; }
+    .date { text-align:center; font-size:.9em; color:#777; margin-bottom:18px; }
+    article p { text-align:justify; margin-bottom:14px; font-size:1.03em; line-height:1.58; }
+    .back-links { text-align:center; margin-top:28px; font-size:.95em; }
+    .back-links a { color:#004aad; text-decoration:none; margin:0 6px; border-bottom:1px solid #aac4ff; transition:color .3s, border-color .3s; }
+    .back-links a:hover { color:#002f7f; border-color:#004aad; text-shadow:0 0 6px rgba(0,90,255,.25); }
+    .contacts { text-align:center; margin-top:36px; font-size:.95em; }
+    .contacts a { color:#004aad; text-decoration:none; transition:color .3s, text-shadow .3s; }
+    .contacts a:hover { color:#002f7f; text-shadow:0 0 6px rgba(0,90,255,.25); }
+    footer { text-align:center; font-size:.8em; color:#777; margin-top:36px; padding-bottom:28px; }
+    @media (max-width:768px) { .container{padding:15px;} article p{font-size:.98em; text-align:left;} .portrait img{width:140px;} }
+    @media (prefers-color-scheme:dark) {
+      body { background:#111; color:#ddd; }
+      .subtitle { color:#aaa; } .date { color:#999; }
+      .back-links a, .contacts a { color:#6ea8ff; border-color:#3b4d7a; }
+      .back-links a:hover, .contacts a:hover { color:#9cc6ff; border-color:#6ea8ff; text-shadow:0 0 10px rgba(160,200,255,.45); }
+      footer { color:#888; }
+      .portrait img { box-shadow:0 4px 14px rgba(255,255,255,.1); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="lang-switch">
+        <a href="bank_payments_case.html" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
+        <a href="bank_payments_case_eng.html" class="active" title="English version">🇬🇧</a>
+      </div>
+
+      <div class="name-title" onclick="window.location.href='en.html'">Sergei Olevskii</div>
+      <p class="subtitle">Practitioner in Global Payments and Strategic Development</p>
+
+      <div class="portrait">
+        <img src="sergei_caricature.png" alt="Sergei Olevskii caricature">
+      </div>
+    </header>
+
+    <section class="article-header">
+      <div class="article-title">
+        If the Bank Accepted the Payments, the Question Is Not Only About the Bank
+      </div>
+      <div class="date">May 2026</div>
+    </section>
+
+    <article>
+
+      <p>
+        After the detention of a major player in the online payments market, the usual picture will appear again: illegal casinos, criminal schemes, unlawful transfers.
+      </p>
+
+      <p>
+        The problem is that this explanation is too superficial.
+      </p>
+
+      <p>
+        The main question here is not whether payments to illegal casinos existed. The main question is how such a system could operate for a long time, at scale, and through banking infrastructure similar to Gazprombank’s.
+      </p>
+
+      <p>
+        It is important to understand the mechanics.
+      </p>
+
+      <p>
+        Usually, this is not classic gambling acquiring, where a casino is officially connected as a merchant and accepts card payments through a gambling MCC. Nor is it even miscoding, when casino transactions are processed under MCCs belonging to some other services.
+      </p>
+
+      <p>
+        All of this is because the player does not care how the system is arranged. He simply tops up his account. He presses the deposit button, receives a card number or payment details, transfers the money — and the balance appears.
+      </p>
+
+      <p>
+        Formally, this is an ordinary P2P transfer between individuals. In reality, it is a top-up of a gaming account. In other words, P2P here becomes a substitute for classic acquiring. Let us be honest: instant bank transfers are now replacing classic acquiring everywhere, but that does not change the substance.
+      </p>
+
+      <p>
+        From the outside, everything looks like ordinary transfers between individuals. Inside, it is payment infrastructure for the gambling industry.
+      </p>
+
+      <p>
+        For such a model to work, a technical platform alone is not enough. The most important things in this business are the bank and the relationship with the merchant — in this case, with the casino. Especially with the bank. A merchant, particularly one like such a casino, will come for good conditions. Not all at once, but partially, gradually increasing volumes.
+      </p>
+
+      <p>
+        And here it is important to understand the basic reality of the market:
+      </p>
+
+      <p>
+        all grey and illegal online casinos, to one degree or another, grow out of the legal gambling business. Newcomers simply cannot enter this market. Players go where they already know everything. And only later, from there, they may move into other gaming “spaces”.
+      </p>
+
+      <p>
+        The same people. The same teams. The same competencies. The same affiliate networks. The same specialists in traffic, anti-fraud, retention, risk management and payments. And the same people discussing processing commissions — that very part of the business where other forms of compensation between all the so-called stakeholders are also discussed.
+      </p>
+
+      <p>
+        The illegal segment does not arise separately. It grows alongside the legal market and uses the same skills, the same infrastructure and the same business connections.
+      </p>
+
+      <p>
+        The payment side works in the same way.
+      </p>
+
+      <p>
+        You cannot simply enter this business from nowhere. Either you are already embedded in the existing ecosystem, or you must have very serious money, connections and access to banking infrastructure.
+      </p>
+
+      <p>
+        And this is where the most interesting part begins.
+      </p>
+
+      <p>
+        The version that “everything was arranged inside the bank” looks too weak if we are talking about large flows and long-term operations.
+      </p>
+
+      <p>
+        Because mass P2P transfers that are in fact top-ups of gaming accounts inevitably leave a trace:
+      </p>
+
+      <p>
+        — repeated transactions, with the issuers and payment instruments used by labour migrants largely being the same: Sber, Tinkoff, Zolotaya Korona, MTS;<br>
+        — concentration of transfers;<br>
+        — high turnover;<br>
+        — rapid movement of money;<br>
+        — stable behavioural patterns.
+      </p>
+
+      <p>
+        If the flow exists for a long time, then the question is already not only for the bank.
+      </p>
+
+      <p>
+        If everything was “arranged” inside the bank, then it is logical to assume that the level of tolerance was broader. Because banks have not only their own control departments. There is the regulator, monitoring, supervision, requirements for suspicious transactions and many external levels of control.
+      </p>
+
+      <p>
+        That is why the main question in this story looks different.
+      </p>
+
+      <p>
+        Not:
+      </p>
+
+      <p>
+        “Was there a casino?”
+      </p>
+
+      <p>
+        And not even:
+      </p>
+
+      <p>
+        “Who accepted the payments?”
+      </p>
+
+      <p>
+        But:
+      </p>
+
+      <p>
+        if the model worked for a long time, what changed now?
+      </p>
+
+      <p>
+        There is one more important detail:
+      </p>
+
+      <p>
+        A significant part of the online casino audience in Russia — including in the grey segment — for a long time consisted of labour migrants: taxi drivers, couriers, street cleaners, construction workers, manual workers. People who worked hard, sent money home and at the same time played online.
+      </p>
+
+      <p>
+        These were mass, small, but regular deposits.
+      </p>
+
+      <p>
+        But in recent years, this audience has objectively shrunk. A significant part of these people, as is known, has left. The structure of migration, employment and money flows has changed.
+      </p>
+
+      <p>
+        In other words:
+      </p>
+
+      <p>
+        it is quite possible that the market did not grow — but, on the contrary, became smaller.
+      </p>
+
+      <p>
+        And when the market shrinks, everything changes.
+      </p>
+
+      <p>
+        A fight begins for a shrinking money flow. Incentives change. Agreements change. The level of tolerance changes.
+      </p>
+
+      <p>
+        In such conditions, the story may no longer be only about legality or illegality.
+      </p>
+
+      <p>
+        It may be about a change in the rules of the game.
+      </p>
+
+      <p>
+        Because if the system operated for a long time and through the same banking infrastructures, then the main question of this story remains the same:
+      </p>
+
+      <p>
+        if the bank accepted the payments, the question was probably not only about the bank. So what exactly changed now?
+      </p>
+
+    </article>
+
+    <div class="back-links">
+      <a href="en.html">← Back to main</a> |
+      <a href="bank_payments_case.html">🇷🇺 Russian version of this article</a>
+    </div>
+
+    <div class="contacts">
+      <p><b>Contacts:</b><br>
+        <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+        <a href="mailto:sergei.olevskii@icloud.com">Email</a> |
+        <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <footer>© 2026 Sergei Olevskii</footer>
+  </div>
+</body>
+</html>
