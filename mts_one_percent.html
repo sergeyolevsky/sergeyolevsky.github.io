@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Когда один процент разрушает доверие. Несколько вопросов к МТС и тем, кто проектирует клиентский опыт — Сергей Олевский</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body { margin:0; padding:0; font-family:"Segoe UI", Roboto, sans-serif; line-height:1.6; color:#222; background:#fafafa; transition:background-color .4s, color .4s; }
+
+    .container { max-width:820px; margin:0 auto; padding:20px; }
+
+    header { text-align:center; margin-bottom:25px; }
+
+    .lang-switch { font-size:1.4em; margin:8px 0 6px; user-select:none; }
+
+    .lang-switch a { text-decoration:none; transition:transform .2s, filter .3s; }
+
+    .lang-switch a:hover { transform:scale(1.15); filter:drop-shadow(0 0 6px rgba(0,90,255,.4)); }
+
+    .name-title { font-size:1.4em; font-weight:600; margin:5px 0 2px; cursor:pointer; transition:text-shadow .4s, color .3s; }
+
+    .name-title:hover { text-shadow:0 0 12px rgba(0,90,255,.4); color:#002f7f; }
+
+    .subtitle { font-size:.95em; color:#555; margin:0; }
+
+    .portrait { text-align:center; margin:16px 0 22px; }
+
+    .portrait img { width:150px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.15); transition:transform .3s; }
+
+    .portrait img:hover { transform:scale(1.03); }
+
+    .article-title { text-align:center; font-size:1.6em; font-weight:600; margin-bottom:6px; }
+
+    .date { text-align:center; font-size:.9em; color:#777; margin-bottom:18px; }
+
+    article p { text-align:justify; margin-bottom:14px; font-size:1.03em; line-height:1.58; }
+
+    .back-links { text-align:center; margin-top:28px; font-size:.95em; }
+
+    .back-links a { color:#004aad; text-decoration:none; margin:0 6px; border-bottom:1px solid #aac4ff; transition:color .3s, border-color .3s; }
+
+    .back-links a:hover { color:#002f7f; border-color:#004aad; text-shadow:0 0 6px rgba(0,90,255,.25); }
+
+    .contacts { text-align:center; margin-top:36px; font-size:.95em; }
+
+    .contacts a { color:#004aad; text-decoration:none; transition:color .3s, text-shadow .3s; }
+
+    .contacts a:hover { color:#002f7f; text-shadow:0 0 6px rgba(0,90,255,.25); }
+
+    footer { text-align:center; font-size:.8em; color:#777; margin-top:36px; padding-bottom:28px; }
+
+    @media (max-width:768px) {
+
+      .container{padding:15px;}
+
+      article p{font-size:.98em; text-align:left;}
+
+      .portrait img{width:140px;}
+
+    }
+
+    @media (prefers-color-scheme:dark) {
+
+      body { background:#111; color:#ddd; }
+
+      .subtitle { color:#aaa; }
+
+      .date { color:#999; }
+
+      .back-links a, .contacts a { color:#6ea8ff; border-color:#3b4d7a; }
+
+      .back-links a:hover, .contacts a:hover { color:#9cc6ff; border-color:#6ea8ff; text-shadow:0 0 10px rgba(160,200,255,.45); }
+
+      footer { color:#888; }
+
+      .portrait img { box-shadow:0 4px 14px rgba(255,255,255,.1); }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+
+    <div class="lang-switch">
+
+      <a href="mts_one_percent.html" class="active" title="Русская версия">🇷🇺</a> &nbsp;|&nbsp;
+
+      <a href="mts_one_percent_eng.html" title="English version">🇬🇧</a>
+
+    </div>
+
+    <div class="name-title" onclick="window.location.href='index.html'">Сергей Олевский</div>
+
+    <p class="subtitle">Практик в области международных платежей и стратегического развития</p>
+
+    <div class="portrait">
+
+      <img src="sergei_caricature.png" alt="Сергей Олевский карикатура">
+
+    </div>
+
+  </header>
+
+  <section class="article-header">
+
+    <div class="article-title">
+
+      Когда один процент разрушает доверие. Несколько вопросов к МТС и тем, кто проектирует клиентский опыт.
+
+    </div>
+
+    <div class="date">Июль 2026</div>
+
+  </section>
+
+  <article>
+
+    <p>Сегодня столкнулся с ситуацией, которая, на мой взгляд, очень хорошо показывает, как одно, казалось бы, незначительное управленческое решение способно испортить впечатление от всей компании.</p>
+
+    <p>У меня дома интернет МТС привязан к номеру мобильного телефона жены. Утром интернет перестал работать. Вместо доступа в сеть появилось сообщение:</p>
+
+    <p><i>«У вас задолженность 782 рубля. Для восстановления услуги оплатите задолженность.»</i></p>
+
+    <p>Там же была кнопка оплаты.</p>
+
+    <p>Я нажал на нее. Открылось платежное окно МТС. Сумма уже была заполнена автоматически — те самые 782 рубля с копейками. Я ввел данные банковской карты и оплатил ровно столько, сколько сама система предложила к оплате.</p>
+
+    <p>Интернет не появился.</p>
+
+    <p>Я решил, что платеж просто еще не дошел. Поскольку карта была не моя, проверить ничего не смог. В итоге попросил родственников дополнительно пополнить баланс телефона еще на 800 рублей. После этого интернет появился практически сразу.</p>
+
+    <p>Вечером выяснилось, что причина оказалась совершенно другой.</p>
+
+    <p>Оказывается, при пополнении баланса МТС сразу удерживает один процент от суммы платежа как компенсацию комиссии за прием платежа. В результате после оплаты именно той суммы, которую сама компания указала как достаточную для восстановления услуги, на счете остается небольшая задолженность, а услуга не восстанавливается.</p>
+
+    <p>И здесь у меня возникло сразу несколько вопросов.</p>
+
+    <p><b>Первый.</b></p>
+
+    <p>Если компания знает, что после оплаты будет удержан один процент, почему этот процент сразу не учитывается в сумме, которую система предлагает оплатить?</p>
+
+    <p>Почему клиенту показывают сумму, которой заведомо недостаточно?</p>
+
+    <p><b>Второй.</b></p>
+
+    <p>Почему нельзя восстановить услугу после оплаты заявленной задолженности, а этот один процент начислить отдельной строкой уже после?</p>
+
+    <p><b>Третий.</b></p>
+
+    <p>Почему вообще расходы компании на эквайринг неожиданно становятся проблемой клиента именно в тот момент, когда он добросовестно выполняет все инструкции системы?</p>
+
+    <p>Как человек, который много лет занимался международными платежами, эквайрингом и разработкой платежных продуктов, могу сказать одну простую вещь.</p>
+
+    <p>Хороший платежный сервис строится вокруг очень простого правила:</p>
+
+    <p><b>Если система назвала сумму к оплате, то после оплаты именно этой суммы клиент должен получить ожидаемый результат.</b></p>
+
+    <p>Все остальное — это уже внутренняя кухня компании, которая не должна перекладываться на пользователя.</p>
+
+    <p>Особенно странно выглядит тот факт, что речь идет не о сложной технической задаче.</p>
+
+    <p>Добавить один процент к автоматически рассчитанной сумме — задача буквально на несколько строк программного кода.</p>
+
+    <p>Поэтому возникает следующий вопрос.</p>
+
+    <p>Неужели за все время никто внутри компании не сел и не попробовал пройти этот путь глазами обычного клиента?</p>
+
+    <p>Или подобные сценарии вообще не тестируются?</p>
+
+    <p>Либо кто-то действительно решил, что ситуация, когда клиент оплачивает сумму, указанную самой системой, но все равно остается должником, — это нормальный пользовательский опыт.</p>
+
+    <p>Если это так, то проблема значительно серьезнее одного процента комиссии.</p>
+
+    <p>Я искренне не хочу верить, что подобное решение могло быть сознательно утверждено руководством компании.</p>
+
+    <p>Гораздо больше хочется верить в другое: что наверх такие истории просто не доходят, а подобные механики появляются где-то на уровне отдельных подразделений и проходят без должной продуктовой экспертизы.</p>
+
+    <p>Но если руководство об этом знает и считает подобную модель нормальной, то возникает уже совсем другой вопрос — насколько в компании сегодня вообще ценится доверие клиента.</p>
+
+    <p>Речь здесь не о семи или восьми рублях.</p>
+
+    <p>Речь о принципе.</p>
+
+    <p>О доверии.</p>
+
+    <p>О качестве управления.</p>
+
+    <p>О внимании к деталям.</p>
+
+    <p>Именно из таких деталей складывается отношение клиентов к бренду.</p>
+
+    <p>Иногда репутацию компании портят не конкуренты и не кризисы.</p>
+
+    <p>Иногда ее портит человек, который однажды сказал: <i>«И так сойдет».</i></p>
+
+    <p>И никто выше не спросил: <i>«А что в этот момент почувствует клиент?»</i></p>
+
+  </article>
+
+  <div class="back-links">
+
+    <a href="index.html">← На главную</a> |
+
+    <a href="mts_one_percent_eng.html">🇬🇧 English version of this article</a>
+
+  </div>
+
+  <div class="contacts">
+
+    <p><b>Контакты:</b><br>
+
+      <a href="https://t.me/solevsky" target="_blank">Telegram</a> |
+
+      <a href="mailto:sergei.olevskii@icloud.com">Email</a> |
+
+      <a href="https://www.linkedin.com/in/sergei-olevskii-b6154015" target="_blank">LinkedIn</a>
+
+    </p>
+
+  </div>
+
+  <footer>© 2026 Сергей Олевский</footer>
+
+</div>
+
+</body>
+
+</html>
